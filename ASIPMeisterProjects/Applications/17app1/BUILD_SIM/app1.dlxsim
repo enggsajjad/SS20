@@ -1,0 +1,38 @@
+	.section	.text
+	.addressing	.Word
+;	.align 2
+;	.globl	_start
+;	.type	_start, @function
+_start:
+	; load stack pointer
+	addi	r5, r0,  (0xFFFFC/0x10000)
+	lsoi	r5, r5, (0xFFFFC%0x10000)
+
+	addi	r16, r0,  (_main/0x10000)
+	lsoi	r16, r16, (_main%0x10000)
+
+	subi	r5, r5, #4			; push link reg
+	sw	(r5), r3
+
+	ori	r1, r1, #0x00000300		; enable interrupt
+
+	jprl	r16
+
+	lw	r3, (r5)			; pop link reg
+	addi	r5, r5, #4
+
+	trap #0
+
+	.section	.text
+	.addressing	Word
+
+_main:	
+	ADDI	R21, R0, $(5)
+	ADDI	R22, R0, $(9)
+
+	OR	R23, R21, R22
+	AND	R24, R21, R22
+	SUB	R25, R21, R22
+	MUL	R26, R21, R22
+	LLS	R27, R21, R22
+	TRAP #0

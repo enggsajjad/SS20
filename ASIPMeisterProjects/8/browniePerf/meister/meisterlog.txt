@@ -1,0 +1,66 @@
+ Copyright (C) 2011 ASIP Solutions, Inc. All rights reserved. 
+6/18/20 6:26 PM : "Main menu" start.
+6/18/20 6:26 PM : Load file "ASIPmeisterStd.ini".
+6/18/20 6:26 PM : Load file "browstd32P.pdb".
+6/18/20 6:26 PM : "Design Goal & Arch. Design" complete.
+6/18/20 6:26 PM : "" start edit.
+6/18/20 6:26 PM : "" save
+6/18/20 6:26 PM : "" re-edit.
+6/18/20 6:26 PM : "" finish edit.
+6/18/20 6:26 PM : "Design Goal & Arch. Design" start browse.
+6/18/20 6:26 PM : "Design Goal & Arch. Design" finish browse.
+6/18/20 6:27 PM : Query "parameter(pcu,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(register,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(mifu,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(mifu,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(multiplier,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(divider,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(shifter,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(wire_in,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(wire_out,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(register,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(dummy_register,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(browregfile,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/18/20 6:27 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/18/20 6:27 PM : "Resource Declaration" start browse.
+6/18/20 6:27 PM : "Resource Declaration" finish browse.
+6/18/20 6:27 PM : "Storage Spec" complete.
+6/18/20 6:27 PM : "Storage Spec" start browse.
+6/18/20 6:27 PM : "Storage Spec" finish browse.
+6/18/20 6:27 PM : "Interface Definition" complete.
+6/18/20 6:27 PM : "Interface Definition" start browse.
+6/18/20 6:27 PM : "Interface Definition" finish browse.
+6/18/20 6:27 PM : "Instruction Definition" complete.
+6/18/20 6:27 PM : "Instruction Definition" start browse.
+6/18/20 6:27 PM : "Instruction Definition" finish browse.
+6/18/20 6:27 PM :  archest browstd32P.arc browstd32P_arc.log finished as normally.
+6/18/20 6:27 PM : Load file "browstd32P_arc.log".
+6/18/20 6:27 PM : "Arch. Level Estimation" complete.
+6/18/20 6:27 PM :  asm_translator asmdev browstd32P browstd32P_asm.log finished as normally.
+6/18/20 6:27 PM : Load file "browstd32P_asm.log".
+6/18/20 6:27 PM : "Assembler Generation" complete.
+6/18/20 6:27 PM : "Micro Op. Description" start edit.
+6/18/20 6:27 PM : "Micro Op. Description" save
+6/18/20 6:27 PM : "Micro Op. Description" complete.
+6/18/20 6:27 PM : "Micro Op. Description" finish browse.
+6/18/20 6:28 PM :  modelgen both browstd32P browstd32P_mod.log VHDL finished as normally.
+6/18/20 6:28 PM : Load file "browstd32P_mod.log".
+6/18/20 6:28 PM : "HDL Generation" complete.
+6/18/20 6:28 PM : "C Definition" complete.
+6/18/20 6:28 PM : "C Definition" start browse.
+6/18/20 6:28 PM : "C Definition" finish browse.
+6/18/20 6:29 PM : Load file "browstd32P_com.log".
+6/18/20 6:29 PM : "Compiler Generation" complete.
+6/18/20 6:44 PM : Load file "browstd32P_com.log".
+6/18/20 6:44 PM : "Compiler Generation" complete.
+6/18/20 6:44 PM : Save file "browstd32P.pdb".
+6/18/20 6:44 PM : "Main menu" quit.

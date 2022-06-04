@@ -1,0 +1,282 @@
+; options passed:  -iprefix -auxbase-strip
+;; options enabled:  -falign-loops -fargument-alias -fbranch-count-reg
+;; -fcommon -fearly-inlining -feliminate-unused-debug-types -ffunction-cse
+;; -fgcse-lm -fident -finline-functions-called-once -fivopts
+; -fkeep-static-consts -fleading-underscore -fmath-errno
+; -fmove-loop-invariants -fpeephole -freg-struct-return -fsched-interblock
+; -fsched-spec -fsched-stalled-insns-dep -fshow-column
+; -fsplit-ivs-in-unroller -ftoplevel-reorder -ftrapping-math -ftree-loop-im
+; -ftree-loop-ivcanon -ftree-loop-optimize -ftree-vect-loop-version
+;; -fzero-initialized-in-bss -mquickcall
+;	.globl	_clockAddress
+	.section	.text
+	.section	.text
+	.addressing	Word
+	xor	r4, r4, r4
+	xor	r5, r5, r5
+	xor	r6, r6, r6
+	addi	r4, r0, $(0x0017EFFC / 0x10000)
+	addi	r5, r0, $(0x0017EFFC / 0x10000)
+
+	lsoi	r4, r4, $(0x0017EFFC % 0x10000)
+	lsoi	r5, r5, $(0x0017EFFC % 0x10000)
+
+	sw	-4(r5), r4
+	sw	-8(r5), r3
+	addi	r5, r4, $(-8)
+
+	jpl	_main	
+	sw	0(r5), r21
+	jpl	_exit
+	.addressing	.Word
+;	.align 2
+;	.globl	_main
+;	.type	_main, @function
+_main:
+;;  Function 'main'; 0 bytes of locals, 0 regs to save, 32 byte of out. args. size.
+	sw	-4(r5),r3	; push LinkRegister(r3)
+	sw	-8(r5),r4	; push FrameRegister(r4)
+	addi	r4, r5,#-8	; FramePtr = StackPtr-8
+	addi	r5,r5,#-40	; alloc local storage
+	jpl	_d_clear
+	addi	r8,r0,(LC_app_3/0x10000)
+	lsoi	r8,r8,(LC_app_3%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_4/0x10000)
+	lsoi	r8,r8,(LC_app_4%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_5/0x10000)
+	lsoi	r8,r8,(LC_app_5%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_6/0x10000)
+	lsoi	r8,r8,(LC_app_6%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_7/0x10000)
+	lsoi	r8,r8,(LC_app_7%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_8/0x10000)
+	lsoi	r8,r8,(LC_app_8%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_9/0x10000)
+	lsoi	r8,r8,(LC_app_9%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_10/0x10000)
+	lsoi	r8,r8,(LC_app_10%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_11/0x10000)
+	lsoi	r8,r8,(LC_app_11%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_12/0x10000)
+	lsoi	r8,r8,(LC_app_12%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_13/0x10000)
+	lsoi	r8,r8,(LC_app_13%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_app_14/0x10000)
+	lsoi	r8,r8,(LC_app_14%0x10000)
+	jpl	_u_print
+	addi	r8,r0,#0
+	addi	r9,r0,#0
+	addi	r10,r0,#309
+	addi	r11,r0,#239
+	jpl	_g_drawrect
+	addi	r8,r0,(LC_app_15/0x10000)
+	lsoi	r8,r8,(LC_app_15%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#10
+	jpl	_g_print
+	addi	r8,r0,(LC_app_16/0x10000)
+	lsoi	r8,r8,(LC_app_16%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#30
+	jpl	_g_print
+	addi	r8,r0,(LC_app_17/0x10000)
+	lsoi	r8,r8,(LC_app_17%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#50
+	jpl	_g_print
+	addi	r8,r0,(LC_app_18/0x10000)
+	lsoi	r8,r8,(LC_app_18%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#70
+	jpl	_g_print
+	addi	r8,r0,(LC_app_19/0x10000)
+	lsoi	r8,r8,(LC_app_19%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#90
+	jpl	_g_print
+	addi	r8,r0,(LC_app_20/0x10000)
+	lsoi	r8,r8,(LC_app_20%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#110
+	jpl	_g_print
+	addi	r8,r0,(LC_app_16/0x10000)
+	lsoi	r8,r8,(LC_app_16%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#130
+	jpl	_g_print
+	addi	r8,r0,(LC_app_21/0x10000)
+	lsoi	r8,r8,(LC_app_21%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#150
+	jpl	_g_print
+	addi	r8,r0,(LC_app_22/0x10000)
+	lsoi	r8,r8,(LC_app_22%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#170
+	jpl	_g_print
+	addi	r8,r0,(LC_app_23/0x10000)
+	lsoi	r8,r8,(LC_app_23%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#190
+	jpl	_g_print
+	addi	r8,r0,(LC_app_24/0x10000)
+	lsoi	r8,r8,(LC_app_24%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#210
+	jpl	_g_print
+	addi	r8,r0,(LC_app_25/0x10000)
+	lsoi	r8,r8,(LC_app_25%0x10000)
+	addi	r9,r0,#25
+	addi	r10,r0,#230
+	jpl	_g_print
+	addi	r6,r0,#0
+	lw	r3,4(r4)	; pop LinkRegister(r3)
+	addi	r5,r4,#8	; StackPointer = FramePointer+8
+	lw	r4,(r4)		; restore FramePointer
+	jpr	r3		; return
+;	.size	_main, .-_main
+;	.ident	"GCC: (GNU) 4.2.2" 
+
+_exit: 
+	trap #0 
+
+	.section	.data
+	.addressing	.Word
+;	.align 2
+;	.type	_clockAddress, @object
+;	.size	_clockAddress, 4
+_clockAddress:
+	.data.32	50331648
+;	.globl	_array
+;	.align 2
+;	.type	_array, @object
+;	.size	_array, 80
+_array:
+	.data.32	45
+	.data.32	75
+	.data.32	342
+	.data.32	54
+	.data.32	7
+	.data.32	86
+	.data.32	92
+	.data.32	235
+	.data.32	4
+	.data.32	42
+	.data.32	99
+	.data.32	78
+	.data.32	63
+	.data.32	352
+	.data.32	21
+	.data.32	634
+	.data.32	6
+	.data.32	77
+	.data.32	346
+	.data.32	23
+	.section	.rodata
+;	.align 2
+LC_app_0:
+	.string	"Array:"
+;	.align 2
+LC_app_1:
+	.string	"
+"
+;	.align 2
+LC_app_2:
+	.string	" "
+	.section	.rodata
+;	.align 2
+LC_app_3:
+	.string	"
+
+  Initialise array...
+"
+;	.align 2
+LC_app_4:
+	.string	"  Array:
+"
+;	.align 2
+LC_app_5:
+	.string	"  45 75 342 54 7 86 92 235
+"
+;	.align 2
+LC_app_6:
+	.string	"  4 42 99 78 63 352 21 634
+"
+;	.align 2
+LC_app_7:
+	.string	"  6 77 346 23 
+"
+;	.align 2
+LC_app_8:
+	.string	"
+  BubbleSort: sorting...
+"
+;	.align 2
+LC_app_9:
+	.string	"
+  Array:
+"
+;	.align 2
+LC_app_10:
+	.string	"  4 6 7 21 23 42 45 54 
+"
+;	.align 2
+LC_app_11:
+	.string	"  63 75 77 78 86 92 99 235
+"
+;	.align 2
+LC_app_12:
+	.string	"  342 346 352 634 
+"
+;	.align 2
+LC_app_13:
+	.string	"  Array Sorted: YES
+"
+;	.align 2
+LC_app_14:
+	.string	"  Number of cycles needed: 621400
+"
+;	.align 2
+LC_app_15:
+	.string	"  Initialise array..."
+;	.align 2
+LC_app_16:
+	.string	"  Array:"
+;	.align 2
+LC_app_17:
+	.string	"  45 75 342 54 7 86 92 235"
+;	.align 2
+LC_app_18:
+	.string	"  4 42 99 78 63 352 21 634"
+;	.align 2
+LC_app_19:
+	.string	"  6 77 346 23"
+;	.align 2
+LC_app_20:
+	.string	"  BubbleSort: sorting..."
+;	.align 2
+LC_app_21:
+	.string	"  4 6 7 21 23 42 45 54"
+;	.align 2
+LC_app_22:
+	.string	"  63 75 77 78 86 92 99 235"
+;	.align 2
+LC_app_23:
+	.string	"  342 346 352 634"
+;	.align 2
+LC_app_24:
+	.string	"  Array Sorted: YES"
+;	.align 2
+LC_app_25:
+	.string	"  Number of cycles needed: 621400"

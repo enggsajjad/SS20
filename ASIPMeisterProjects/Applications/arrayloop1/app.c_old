@@ -1,0 +1,91 @@
+#define LCD_ADDR 0x2000000
+#define UART_ADDR 0x1000000
+
+//volatile int* const uartAddress = (int*)UART_ADDR;
+//volatile int* const lcdAddress = (int*)LCD_ADDR;
+
+int storeByte(char* address, int value) {
+  int loadMask = -4;
+  int charAddress = (int)address;
+  int* wordPointer = (int*)(charAddress & loadMask);
+  int wordValue = *wordPointer;
+  int mask = 0xFF << ( (3 - (charAddress&3) ) << 3);
+  value <<= (~(charAddress&3) ) << 3;  // The "~()" is because the endianess
+  wordValue &= ~mask;
+  wordValue |= value;
+  *wordPointer = wordValue;
+  return wordValue;
+}
+
+int intToStr(int val, char* outputString) {
+  int i=0, j=0;
+  char stringReverse[32];
+
+  if (val < 0) {
+    val = -val;
+    storeByte(outputString, '-');
+    j++;
+  } else if (val == 0) {
+    storeByte(outputString, '0');
+    j++;
+  }
+  
+  while(val != 0) {
+    storeByte(stringReverse+i, (val % 10) + '0' );
+    val /= 10;
+    i++;
+  }
+  while( i>0 ) {
+    i--;
+    storeByte(outputString+j, *(stringReverse+i));
+    j++;
+  }
+  storeByte(outputString+j, '\0');
+  return 0;
+}
+/*
+int t_print(const char* str) {
+  volatile int* const lcdAddress = (int*)LCD_ADDR;
+  while (*str != '\0') {
+    *lcdAddress = *str++;
+  }
+  return 0;
+}
+
+int t_printInt(int a) {
+  char tempString[20];
+  intToStr(a, tempString);
+  t_print(tempString);
+  return 0;
+}
+*/
+int u_print(const char* str) {
+  volatile int* const uartAddress = (int*)UART_ADDR;
+  while (*str != '\0') {
+    *uartAddress = *str++;
+  }
+  return 0;
+}
+
+
+int main() {
+
+  int a=6789;
+
+  char tempString[32];
+ 
+
+//  u_print("Testing...\r\n");
+//  t_print("Testing...\r\n");
+
+  intToStr(a, tempString);
+  u_print(tempString);
+  u_print("\r\n");
+
+//  t_print(tempString);
+//  t_print(" ");
+
+  return 0;
+}
+
+

@@ -1,0 +1,72 @@
+	.section	.text
+	.addressing	Word
+	xor	r4, r4, r4
+	xor	r5, r5, r5
+	xor	r6, r6, r6
+	addi	r4, r0, $(0x0017EFFC / 0x10000)
+	addi	r5, r0, $(0x0017EFFC / 0x10000)
+
+	lsoi	r4, r4, $(0x0017EFFC % 0x10000)
+	lsoi	r5, r5, $(0x0017EFFC % 0x10000)
+
+	sw	-4(r5), r4
+	sw	-8(r5), r3
+	addi	r5, r4, $(-8)
+
+	jpl	_main	
+	sw	0(r5), r21
+	jpl	_exit
+
+
+
+	.section	.text
+	.addressing	.Word
+;	.align 2
+;	.globl	_main
+;	.type	_main, @function
+_main:
+	ADDI	R21, R0,  (_A/0x10000)
+	LSOI	R21, R21, (_A%0x10000)
+
+
+	LW	R22, 0(R21)
+	LW	R23, 4(R21)
+	; following NOP required when -pf1
+	;NOP
+	ADD	R24, R22, R23
+
+	ADDI	R25, R0,  (_B/0x10000)
+	LSOI	R25, R25, (_B%0x10000)
+
+	SW	0(R25), R24
+
+
+	jpr	r3		; return
+;	.size	_main, .-_main
+;	.ident	"GCC: (GNU) 4.2.2"
+
+
+
+
+
+_exit: 
+	trap	#0	; HALT
+
+
+;	.globl	_A
+	.section	.data
+	.addressing	.Word
+;	.align 2
+;	.type	_A, @object
+;	.size	_A, 8
+_A:
+	.data.32	42
+	.data.32	23
+
+;	.globl	_B
+;	.align 2
+;	.type	_B, @object
+;	.size	_B, 4
+_B:
+	.data.32	0
+

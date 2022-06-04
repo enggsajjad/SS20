@@ -1,0 +1,3 @@
+vhdl work "Debouncer.vhd"
+verilog work "tf_deboun.v"
+verilog work "/Software/xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v"

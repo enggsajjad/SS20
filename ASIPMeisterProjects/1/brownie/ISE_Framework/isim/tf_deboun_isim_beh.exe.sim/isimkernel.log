@@ -1,0 +1,28 @@
+Command line:
+   tf_deboun_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59645
+
+Sat Dec 22 17:19:22 2018
+
+
+ Elaboration Time: 0.05 sec
+
+ Current Memory Usage: 118.809 Meg
+
+ Total Signals          : 17
+ Total Nets             : 26
+ Total Signal Drivers   : 10
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 13
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 490
+
+ Total Simulation Time: 488.37 sec
+
+ Current Memory Usage: 127.205 Meg
+
+Sat Dec 22 17:29:20 2018
+

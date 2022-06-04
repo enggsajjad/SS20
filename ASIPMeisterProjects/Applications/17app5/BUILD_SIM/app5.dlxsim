@@ -1,0 +1,91 @@
+	.section	.text
+	.section	.text
+	.addressing	Word
+	
+	XOR	R4, R4, R4
+	XOR	R5, R5, R5
+	XOR	R6, R6, R6
+	ADDI	R4, R0, $(0xFFFFC / 0x10000)
+	ADDI	R5, R0, $(0xFFFFC / 0x10000)
+
+	LSOI	R4, R4, $(0xFFFFC % 0x10000)
+	LSOI	R5, R5, $(0xFFFFC % 0x10000)
+
+	SW	-4(R5), R4
+	SW	-8(R5), R3
+	ADDI	R5, R4, $(-8)
+
+	JPL	_main	
+	SW	0(R5), R21
+	JPL	_exit
+	.addressing	Word
+
+_main:	ADDI	R21, R0, $(5)
+	ADDI	R22, R0, $(9)
+	ADDI	R23, R0, $(2)	; 0 <= r3 <= 5
+
+	ADDI	R24, R0,  $(_labeL_5_jr_1 / 0x10000)
+	LSOI	R24, R24, $(_labeL_5_jr_1 % 0x10000)
+
+	LLSI	R23, R23, $(3)
+	ADD	R24, R24, R23
+	JPR	R24
+	NOP
+
+
+_labeL_5_jr_1:
+	JP	$(_mark0)
+	NOP
+	JP	$(_mark1)
+	NOP
+	JP	$(_mark2)
+	NOP
+	JP	$(_mark3)
+	NOP
+	JP	$(_mark4)
+	NOP
+	JP	$(_mark5)
+	NOP
+
+_mark0:	
+	AND	R25, R21, R22
+	JP	$(_labeL_5_jr_2)
+	NOP
+	
+_mark1:	
+	OR	R25, R21, R22
+	JP	$(_labeL_5_jr_2)
+	NOP
+	
+_mark2:	
+	XOR	R25, R21, R22
+	JP	$(_labeL_5_jr_2)
+	NOP
+	
+_mark3:	
+	ADD	R25, R21, R22
+	JP	$(_labeL_5_jr_2)
+	NOP
+	
+_mark4:	
+	SUB	R25, R21, R22
+	JP	$(_labeL_5_jr_2)
+	NOP
+	
+_mark5:	
+	ELT	R25, R21, R22
+	JP	$(_labeL_5_jr_2)
+	NOP
+
+_labeL_5_jr_2:
+
+	TRAP #0
+	.section	.text
+	.addressing	Word
+	nop
+_exit:
+	nop
+	nop
+	trap	#0	; HALT
+
+

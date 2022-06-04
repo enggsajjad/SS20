@@ -1,0 +1,351 @@
+=======================================================================
+SS22: for other sessions see below
+=======================================================================
+
+Sessions 0: Presentation
+=======================================================================
+Readings:
+ASIPmeister User Manual
+Laboratory Chapter 1
+Laboratory Chapter 3 (dlxsim; without 3.2.2, 3.2.3 & 3.3.2)
+
+
+
+Sessions 1: Introduction to ASIPMeister						1-Week
+=======================================================================
+ at WS18/ASIPMeisterProjects/1/brownie/Applications/LoopExample
+
+Sources:
+	Session1.pdf
+	browstd32.pdb
+	6_for.s
+
+Readings:
+Laboratory Chapters 8.1, 8.2, 8.3
+BrownieSTD32 Datasheet Introduction and Section 1.1 - 1.3
+2.2.3. Instruction Set Quick Reference
+4. Memory Access
+Appendix A. Delayed Load
+
+
+Sessions 2: Assembly Programs						1-Week
+=======================================================================
+ at WS18/ASIPMeisterProjects/1/brownie/Applications/app1-5
+
+Sources:
+	Session2.pdf
+1_Arith.s
+2_LoadStore.s
+3_Branch.s
+4_Loop.s
+5_jr.s
+
+Readings:
+Laboratory Chapters 2.3, 4 & 5
+
+
+Sessions 3: ModelSim Simulation								1-Week
+=======================================================================
+ at WS18/ASIPMeisterProjects/1/brownie/Applications/LoopExampleC
+
+Sources:
+	Session3.pdf
+	6_for.s
+Readings:
+Laboratory Chapters 6
+
+
+Sessions 4: Synthesis and Hardware Implementation			1-Week
+=======================================================================
+at WS18/ASIPMeisterProjects/1/brownie/Applications/Hello_SW
+at WS18/ASIPMeisterProjects/1/brownie/Applications/Hello_HW
+
+Sources:
+	Session4.pdf
+	app.c
+Readings:
+Laboratory Chapters 8.2.3, 3.2.2, 3.2.3, 4.4 
+ASIPmeister Tutorial
+ASIPmeister User Manual
+
+
+
+Sessions 5: Adding New Instructions							2-Week
+=======================================================================
+ at WS18/ASIPMeisterProjects/1/brownie/Applications/arrayloop
+and
+ at WS18/ASIPMeisterProjects/5/brownie/Applications/arrayloopAVG
+
+
+Sources:
+	Session5.pdf
+	loop.c
+Readings:
+All the Chapters, especially 4 & 8, ASIPMeister Tutorial & Manual
+
+
+Sessions 6: Bubble Sort – Simulation & Optimisation			1-Week
+=======================================================================
+ at WS18/ASIPMeisterProjects/1/brownie/Applications/sorting
+and
+ at WS18/ASIPMeisterProjects/5/brownie/Applications/sortingOptS
+
+Sources:
+	Session6.pdf
+bubble.c
+BubbleSort_Address.c
+BubbleSort_Index.c
+
+Readings:
+ Laboratory Chapters 6 & 7
+
+
+
+Sessions 7: Bubble Sort – Power & Area Estimation 			1-Week
+			and Hardware Implementation
+=======================================================================
+ at WS18/ASIPMeisterProjects/1/brownie/Applications/sortingUART
+
+
+
+Sources:
+	Session7.pdf
+	bubble_UART.c
+Readings:
+
+
+
+Sessions 8: An IoT Application: Adaptive Differential		3-Week
+			Pulse Code Modulation (ADPCM)
+=======================================================================
+ at /WS18/ASIPMeisterProjects/1/brownie/Applications/adpcmBramSW works fine
+ at /WS18/ASIPMeisterProjects/1/brownie/Applications/adpcmBramHW lcd could not print whole text
+ at /WS18/ASIPMeisterProjects/1/brownie/Applications/adpcmBramHW2 modified lib_lcd_320.c file with different delays.
+ at /WS18/ASIPMeisterProjects/1/brownie/Applications/adpcmBramHW2NoPrint works fine with audio
+ at /WS18/ASIPMeisterProjects/1/brownie/Applications/lcdMultilines works file
+
+
+Sources:
+	Session8.pdf
+
+
+
+
+
+
+Applications:
+===========================================================================
+loopS/ LoopExample in S, ModelSim is running perfectly.
+loopC/ LoopExample in C, ModelSim is running perfectly.
+cLcdTest/ Lars LCD Test to be run on FPGA, previously it worked on FPGA from WS17. Not aimed for dlxsim or Modelsim
+CExample_lcd/ C LCD Test for printing multiple lines, to be run on FPGA, previously it worked on FPGA from WS17.  Not aimed for dlxsim or Modelsim
+
+-bash-3.2$ cd WS18/ASIPMeisterProjects/Applications/
+-bash-3.2$ ls -1
+17app1
+17app2
+17app3
+17app4
+17app5
+17app6
+17avg
+17avg_c
+17avg_c2
+17avg_c3
+17bgeu
+17bgeu_c
+17bramO0
+17bramO0DM
+17bramO0DM2
+17bramO0DM3
+17bramO0DM4
+17bramO0MIF
+17bramO0_tprint
+17bramO0_uprint
+17bramO0_uprint2
+17bramO1
+17bramO2
+17bramO3
+17bubble
+17bubble_c
+17bubbleUART_c
+17byte_access0
+17byte_access1
+17byte_access2
+17CExample
+17CExample2
+17CExample_lcd
+17CExample_lcd 20180212
+17CExample_lcd 20180215
+17CExample_lcd 20180215 17:31
+17CExample_lcd 20180220
+17CExample_uart
+17cLcdTest
+17cmpInstr
+17instructions
+17Kopie von LoopExample
+17Loop
+17Loop_c
+17LoopExample
+17Loop_wo_compile
+17Loop_wo_compile1
+17matrix
+17mini_wiARRAY_wiPrint
+17mini_woARRAY_wiPrint
+17mini_woARRAY_woPrint
+17NoPipeline
+17Original Kopie von Loop_wo_compile
+17Pipeline
+17SimplePrint
+17SimplePrintInt
+17tests_c
+18addC
+18app1
+18app2
+18app3
+18app4
+18app5
+18arrayloop
+18bgeuC
+18bs1
+18bsLCDhw
+18bsLCDsw
+18bsUART
+18loopC
+18loopS
+18simpledisplayHWmultiplefile
+18simpledisplaySW
+18simpledisplaySWmultiplefile
+18simpleHelloWorldSWmultiplefile
+18simpleprint
+18simpleprintmultiplefile
+18simpleprintmultiplefile2
+18simpleprintmultiplefileMix
+18simpleprintmultiplefileS2
+18simpleprintS
+18teststorebyte
+arrayloop
+arrayloop1
+arrayloop2
+bgeuC
+bgeuS
+bramO0
+bramO0DM
+bramO0DM2
+bramO0DM3
+bramO0DM4
+bramO0MIF
+bramO0_tprint
+bramO0_uprint
+bramO0_uprint2
+bramO1
+bramO2
+bramO3
+BubbleSort_Address.c
+BubbleSort_Index.c
+bubblesortSinglefile0
+bubblesortsinglefile1
+bubblesortSinglefilePrint
+CExample_cntr
+CExample_cntr2
+CExample_lcd
+CExample_lcd1
+CExample_lcd2
+CExample_lcd3
+CExample_lcd4
+CExample_lcd5
+CExample_uart
+cLcdTest
+custInst1
+custInst2
+custInst3
+custInst4
+custInst5
+custInstMethod1
+custInstMethod2
+custInstMethod3
+custInstMethod4
+custInstNXOR
+fhm_alu_w32.vhd
+loopC
+loopS
+mini_wiARRAY_wiPrint
+mini_woARRAY_wiPrint
+mini_woARRAY_woPrint
+simpleArray
+simpledisplayHWmultiplefile
+simpleprint
+simpleprintandAddressing
+tb_alu.vhd
+-bash-3.2$ 
+
+
+
+
+CPU:
+===========================================================================
+
+handler_addr = "00000000000000001111010000000000"; // 0x0000F400 (fixed)
+reset_handler = "00000000000000001111000000000000"; // 0x0000F000 (fixed)
+trap_base    = "00000000000000001111100000000000"; // 0x0000F800 (fixed)
+
+
+browstd32.pdb All instructions included and reset at 0xF000, with no forwarding
+browstd32FW2.pdb All instructions included and reset at 0xF000, with two forwarding units
+
+browstd32A.pdb All instructions included and reset at 0x3000, with no forwarding
+browstd32FW2A.pdb All instructions included and reset at 0x3000, with two forwarding units
+
+
+
+
+=======================================================================
+MOUNTS
+=======================================================================
+sshfs asip-sajjad04@i80pdc:/home/asip-sajjad04 /home/sajjad/asip04
+sshfs sajjad@i80pdc:/Software /home/sajjad/ces_sw/
+sshfs sajjad@i80pdc:/home/sajjad /home/sajjad/ces_home/
+
+=======================================================================
+asip-sajjad04 User:
+40dajjas-pisa
+=======================================================================
+asip-sajjad04@i80labpc01:~:$ls -1
+Excercises
+Paul
+Reports
+thesis
+WS16
+WS17
+WS17_20171204
+
+
+=======================================================================
+sajjad user:
+#sajjan2@
+=======================================================================
+
+=======================================================================
+OLD SEMSETERS
+=======================================================================
+
+WS16:
+---------------------------
+Sessions files held during the semester. Report and excercises done by a student (Paul). Thesis tutorials for Shahzaib.
+WS16B:
+---------------------------
+Sessions files and all sessions implementations by sajjad before each sessions.
+WS17B:
+---------------------------
+First time testing of each sessions with new Brownie ASIPmeister. Lab did not happen this semester.
+WS17_20171204:
+---------------------------
+Some backup of WS17B in-between.
+SS18:
+---------------------------
+Only contains Sessions files held in SS18 Semester. directories Documents, Sessions, epp.
+WS18:
+---------------------------
+This becomes the reference point. Change the sequence of sessions and assembly program to ease mkimg.
+Contains different examples also.
+---------------------------

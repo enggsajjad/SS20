@@ -1,0 +1,20 @@
+/home/sajjad/SS20/ASIPMeisterProjects/5/brownieSWAPIFG/Applications/testMinMax
+-bash-3.2$ make dlxsim
+-----------------------------------------------
+Starting dlxsim:
+-----------------------------------------------
+/home/sajjad/SS20/dlxsimbr/dlxsim -fBUILD_SIM/testMinMax.dlxsim -da0 -pf1
+Biggest used address for Text Section (word aligned): 0x58
+Biggest used address for Data Section (word aligned): 0x0
+(dlxsim) go
+TRAP #0 received
+Altogether 71,0e0(71) cycles executed.
+  0 Warnings for unresolved data dependencies printed.
+  0 Warnings for successive load/store commands printed.
+  0 Warnings for load/stores in the text section printed.
+(dlxsim) get r28
+r28:	0x00000009
+(dlxsim) get r29
+r29:	0x00000005
+(dlxsim) 
+

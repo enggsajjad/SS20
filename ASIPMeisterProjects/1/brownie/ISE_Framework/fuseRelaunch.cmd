@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_Framework/tf_deboun_isim_beh.exe" -prj "/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_Framework/tf_deboun_beh.prj" "work.tf_deboun" "work.glbl" 

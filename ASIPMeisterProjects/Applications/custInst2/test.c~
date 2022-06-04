@@ -1,0 +1,40 @@
+
+
+/*void fun(int a,int b,int *pa,int *pb,int *pp)
+{
+	*pa=a+b;
+	*pb=b-a;
+	*pp=a*b;
+}
+*/
+/*
+void fun1(int a,int b,int *pa,int *pb)
+{
+	*pa=a+b;
+	*pb=b-a;
+}*/
+
+/*int main() {
+
+ 
+		//fun(array[0],array[1],&array[2],&array[3],&array[4]);
+	//int a,b;
+	//fun1(23,12,&a,&b);
+	  //int *rdMin = (int *) 0x04;
+	  //array[2] = *rdMin;
+  return 0;
+}
+*/
+unsigned int array[10] = { 45, 75,0,0,0,0,0,0,0};
+int main() {
+  array[2] = __builtin_brownie32_NXOR(array[0], array[1]);
+  array[3] = __builtin_brownie32_AVG(array[0], array[1]);
+  array[4] = __builtin_brownie32_SWAP(array[0]);
+  __builtin_brownie32_MINMAX(&array[5],&array[6], array[0], array[1]);
+
+  return 0;
+}
+
+
+
+

@@ -1,0 +1,9 @@
+Generating simulation model...
+rtgen error: code 27 : browstd32AVG.ppd(3707)
+syntax error: instruction: BGEU, stage: 3, line: 33,
+error token: ;.
+
+Generating synthesizable model...
+rtgen error: code 27 : browstd32AVG.ppd(3707)
+syntax error: instruction: BGEU, stage: 3, line: 33,
+error token: ;.

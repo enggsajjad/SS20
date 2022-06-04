@@ -1,0 +1,6 @@
+
+
+_exit: 
+	trap	#0	; HALT
+
+

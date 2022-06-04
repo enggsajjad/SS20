@@ -1,0 +1,335 @@
+; options passed:  -auxbase-strip -O0
+;; options enabled:  -falign-loops -fargument-alias -fbranch-count-reg
+;; -fcommon -fearly-inlining -feliminate-unused-debug-types -ffunction-cse
+;; -fgcse-lm -fident -finline-functions-called-once -fivopts
+; -fkeep-static-consts -fleading-underscore -fmath-errno
+; -fmove-loop-invariants -fpeephole -freg-struct-return -fsched-interblock
+; -fsched-spec -fsched-stalled-insns-dep -fshow-column
+; -fsplit-ivs-in-unroller -ftoplevel-reorder -ftrapping-math -ftree-loop-im
+; -ftree-loop-ivcanon -ftree-loop-optimize -ftree-vect-loop-version
+;; -fzero-initialized-in-bss -mquickcall
+;	.globl	_uartAddress
+	.section	.r.text
+;	.align 2
+;	.globl	_main
+;	.type	_main, @function
+_main:
+;;  Function 'main'; 48 bytes of locals, 0 regs to save, 32 byte of out. args. size.
+	sw	-4(r5),r3	; push LinkRegister(r3)
+	sw	-8(r5),r4	; push FrameRegister(r4)
+	addi	r4, r5,#-8	; FramePtr = StackPtr-8
+	addi	r5,r5,#-88	; alloc local storage
+	addi	r6,r0,#6789
+	sw	-16(r4),r6
+	jpl	_printArray
+	sw	-4(r4),r6
+	addi	r8,r0,(LC_bubble_uart_3/0x10000)
+	lsoi	r8,r8,(LC_bubble_uart_3%0x10000)
+	jpl	_u_print
+	addi	r6,r0,(_clockAddress/0x10000)
+	lsoi	r6,r6,(_clockAddress%0x10000)
+	lw	r6,(r6)
+	nop
+	lw	r6,(r6)
+	nop
+	sw	-8(r4),r6
+	addi	r8,r0,#0
+	addi	r9,r0,#19
+	jpl	_bubbleSort
+	addi	r6,r0,(_clockAddress/0x10000)
+	lsoi	r6,r6,(_clockAddress%0x10000)
+	lw	r6,(r6)
+	nop
+	lw	r7,(r6)
+	nop
+	lw	r6,-8(r4)
+	nop
+	sub	r6,r7,r6
+	sw	-8(r4),r6
+	jpl	_printArray
+	sw	-4(r4),r6
+	addi	r8,r0,(LC_bubble_uart_4/0x10000)
+	lsoi	r8,r8,(LC_bubble_uart_4%0x10000)
+	jpl	_u_print
+	lw	r7,-4(r4)
+	nop
+	addi	r6,r0,#0
+	eneq	r6,r7,r6
+	brnz	r6,L_bubble_uart_41
+	addi	r8,r0,(LC_bubble_uart_5/0x10000)
+	lsoi	r8,r8,(LC_bubble_uart_5%0x10000)
+	jpl	_u_print
+	jp	L_bubble_uart_43
+L_bubble_uart_41:
+	addi	r8,r0,(LC_bubble_uart_6/0x10000)
+	lsoi	r8,r8,(LC_bubble_uart_6%0x10000)
+	jpl	_u_print
+L_bubble_uart_43:
+	addi	r8,r0,(LC_bubble_uart_7/0x10000)
+	lsoi	r8,r8,(LC_bubble_uart_7%0x10000)
+	jpl	_u_print
+	addi	r6,r4,#-48
+	lw	r8,-8(r4)
+	nop
+	add	r9,r0,r6
+	jpl	_intToStr
+	addi	r6,r4,#-48
+	add	r8,r0,r6
+	jpl	_u_print
+	addi	r8,r0,(LC_bubble_uart_1/0x10000)
+	lsoi	r8,r8,(LC_bubble_uart_1%0x10000)
+	jpl	_u_print
+	addi	r8,r0,(LC_bubble_uart_8/0x10000)
+	lsoi	r8,r8,(LC_bubble_uart_8%0x10000)
+	jpl	_u_print
+	lw	r7,-16(r4)
+	nop
+	lw	r6,-12(r4)
+	nop
+	elt	r6,r6,r7
+	brz	r6,L_bubble_uart_44
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	addi	r6,r0,#65
+	sw	(r7),r6
+	jp	L_bubble_uart_46
+L_bubble_uart_44:
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	addi	r6,r0,#66
+	sw	(r7),r6
+L_bubble_uart_46:
+	addi	r6,r4,#-48
+	lw	r8,-16(r4)
+	nop
+	add	r9,r0,r6
+	jpl	_intToStr
+	addi	r6,r4,#-48
+	add	r8,r0,r6
+	jpl	_u_print
+	addi	r8,r0,(LC_bubble_uart_2/0x10000)
+	lsoi	r8,r8,(LC_bubble_uart_2%0x10000)
+	jpl	_u_print
+	addi	r6,r0,#0
+	sw	-12(r4),r6
+	jp	L_bubble_uart_47
+L_bubble_uart_48:
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	lw	r6,-12(r4)
+	nop
+	addi	r6,r6,#48
+	sw	(r7),r6
+	lw	r6,-12(r4)
+	nop
+	addi	r6,r6,#1
+	sw	-12(r4),r6
+L_bubble_uart_47:
+	lw	r6,-12(r4)
+	nop
+	addi	r7,r0,#2
+	elt	r6,r7,r6
+	brz	r6,L_bubble_uart_48
+	lw	r7,-16(r4)
+	nop
+	addi	r6,r0,#1000
+	div	r6,r7,r6
+	sw	-12(r4),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	lw	r6,-12(r4)
+	nop
+	addi	r6,r6,#48
+	sw	(r7),r6
+	lw	r7,-16(r4)
+	nop
+	addi	r6,r0,#1000
+	mod	r6,r7,r6
+	sw	-16(r4),r6
+	lw	r7,-16(r4)
+	nop
+	addi	r6,r0,#100
+	div	r6,r7,r6
+	sw	-12(r4),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	lw	r6,-12(r4)
+	nop
+	addi	r6,r6,#48
+	sw	(r7),r6
+	lw	r7,-16(r4)
+	nop
+	addi	r6,r0,#100
+	mod	r6,r7,r6
+	sw	-16(r4),r6
+	lw	r7,-16(r4)
+	nop
+	addi	r6,r0,#10
+	div	r6,r7,r6
+	sw	-12(r4),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	lw	r6,-12(r4)
+	nop
+	addi	r6,r6,#48
+	sw	(r7),r6
+	lw	r7,-16(r4)
+	nop
+	addi	r6,r0,#10
+	mod	r6,r7,r6
+	sw	-16(r4),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	addi	r6,r0,#65
+	sw	(r7),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	addi	r6,r0,#66
+	sw	(r7),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	addi	r6,r0,#67
+	sw	(r7),r6
+	addi	r6,r0,#1
+	sw	-12(r4),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	lw	r6,-12(r4)
+	nop
+	addi	r6,r6,#48
+	sw	(r7),r6
+	addi	r6,r0,#2
+	sw	-12(r4),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	lw	r6,-12(r4)
+	nop
+	addi	r6,r6,#48
+	sw	(r7),r6
+	addi	r6,r0,#3
+	sw	-12(r4),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	lw	r6,-12(r4)
+	nop
+	addi	r6,r6,#48
+	sw	(r7),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	addi	r6,r0,#13
+	sw	(r7),r6
+	addi	r6,r0,(_uartAddress/0x10000)
+	lsoi	r6,r6,(_uartAddress%0x10000)
+	lw	r7,(r6)
+	nop
+	addi	r6,r0,#10
+	sw	(r7),r6
+	addi	r6,r0,#0
+	lw	r3,4(r4)	; pop LinkRegister(r3)
+	addi	r5,r4,#8	; StackPointer = FramePointer+8
+	lw	r4,(r4)		; restore FramePointer
+	jpr	r3		; return
+;	.size	_main, .-_main
+;	.ident	"GCC: (GNU) 4.2.2" 
+
+_exit: 
+	trap #0 
+
+	.section	.rodata
+;	.align 2
+;	.type	_uartAddress, @object
+;	.size	_uartAddress, 4
+_uartAddress:
+	.data.32	16777216
+;	.globl	_clockAddress
+	.section	.data
+	.addressing	.Word
+;	.align 2
+;	.type	_clockAddress, @object
+;	.size	_clockAddress, 4
+_clockAddress:
+	.data.32	50331648
+;	.globl	_array
+;	.align 2
+;	.type	_array, @object
+;	.size	_array, 80
+_array:
+	.data.32	45
+	.data.32	75
+	.data.32	342
+	.data.32	54
+	.data.32	7
+	.data.32	86
+	.data.32	92
+	.data.32	235
+	.data.32	4
+	.data.32	42
+	.data.32	99
+	.data.32	78
+	.data.32	63
+	.data.32	352
+	.data.32	21
+	.data.32	634
+	.data.32	6
+	.data.32	77
+	.data.32	346
+	.data.32	23
+	.section	.rodata
+;	.align 2
+LC_bubble_uart_0:
+	.string	"Array:"
+;	.align 2
+LC_bubble_uart_1:
+	.string	"
+"
+;	.align 2
+LC_bubble_uart_2:
+	.string	" "
+	.section	.rodata
+;	.align 2
+LC_bubble_uart_3:
+	.string	"BubbleSort: sorting...
+"
+;	.align 2
+LC_bubble_uart_4:
+	.string	"Array Sorted: "
+;	.align 2
+LC_bubble_uart_5:
+	.string	"NO!!   ERROR!!"
+;	.align 2
+LC_bubble_uart_6:
+	.string	"YES"
+;	.align 2
+LC_bubble_uart_7:
+	.string	"
+Number of cycles needed: "
+;	.align 2
+LC_bubble_uart_8:
+	.string	"Testing...
+"

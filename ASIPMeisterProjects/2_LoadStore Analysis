@@ -1,0 +1,195 @@
+The program execution in dlxsim and modelsim is bit different and therefore has a bit differnt cycles.
+Dlxim using application.s and startup_dlx2.s to generate .dlxsim which is simulated.
+MOdelsim uses application.s and startup.s and handler.s to generated TEstData.IM/DM with the help or tbbrowstd.x
+In modelsim, after the reset, the handler is activated from 0xF000, it then directed the program counter to jump to 0x00 i.e. startup.s code.
+This code is used to handle stack pointer.
+jprl r16 instruction jumps to the main code at 0x3C. 
+The main code returns to 0x2c after executing all main code.
+From the modelsim analysis, it can be shown that load/store needs 5 extra stalls.
+There are some extra cycles at the begining(after reset) and at the end(before tb_finish)
+
+
+IM
+=============
+   PC   Ints    Instruction
+   00: 00100420	addi	r16, r0,  %hi(_startup_consts)
+   04: 00008428	lsoi	r16, r16, %lo(_startup_consts)
+   08: 00008144	lw	r5,  0(r16)			; load stack pointer
+   0C: 00000000	nop
+   10: 00000420	addi	r16, r0,  %hi(_main)
+   14: 003C8428	lsoi	r16, r16, %lo(_main)
+   18: 00042961	subi	r5, r5, #4			; push link reg
+   1C: 00001947	sw	(r5), r3
+   20: 00000000	nop
+   24: 03000863	ori	r1, r1, #0x00000300
+   28: 0000040F	jprl	r16
+   2C: 000028C4	lw	r3, (r5)
+   30: 00000000	nop
+   34: 00042960	addi	r5, r5, #4
+   38: 0000000D	trap	0
+   3C: 00100560	ADDI	R21, R0,  %hi(_A)
+  40: 0004AD68	LSOI	R21, R21, %lo(_A)
+  44: 0000AD84	LW	R22, 0(R21)
+  48: 0004ADC4	LW	R23, 4(R21)
+  4C: 00000000	NOP
+  50: B5F00001	ADD	R24, R22, R23
+  54: 00100660	ADDI	R25, R0,  %hi(_B)
+  58: 000CCE68	LSOI	R25, R25, %lo(_B)
+  5C: 0000C647	SW	0(R25), R24
+  60: 000000CE	jpr	r3
+  64: 00000000
+
+DM
+=============
+    PC:  Values
+    00: 0017EFFC
+    04: 0000002A
+    08: 00000017
+    0C: 00000041
+    10: 00000000
+
+
+handler.s
+=============
+PC   Ints    Instruction
+F000: 84204081	xor	r16, r16, r16
+F004: 0000040E	jpr	r16
+F008: 00000000
+
+startup.s
+=============
+;
+; startup routine for brownie testbench
+; written by Hirofumi IWATO 
+; All Rights Reserved 2008. ASIP Solutions, Inc.
+;
+
+#define SP r5
+
+	.section	.rodata
+_startup_consts:
+	.long	_sp_data
+	.section	.data
+	.section	.text
+	.align 2
+	.globl	_start
+	.type	_start, @function
+_start:
+	addi	r16, r0,  %hi(_startup_consts)
+	lsoi	r16, r16, %lo(_startup_consts)
+	lw	r5,  0(r16)			; load stack pointer
+        nop
+
+	addi	r16, r0,  %hi(_main)
+	lsoi	r16, r16, %lo(_main)
+
+	subi	r5, r5, #4			; push link reg
+	sw	(r5), r3
+        nop
+
+	ori	r1, r1, #0x00000300		; enable interrupt
+
+	jprl	r16
+
+	lw	r3, (r5)			; pop link reg
+        nop
+
+	addi	r5, r5, #4
+
+	trap	0
+
+2_LoadStore.s
+=============
+	.globl	_A
+.data
+	.align 2
+	.type	_A, @object
+	.size	_A, 8
+_A:
+	.long	42
+	.long	23
+
+	.globl	_B
+	.align 2
+	.type	_B, @object
+	.size	_B, 4
+_B:
+	.long	0
+
+.text
+	.align 2
+	.globl	_main
+	.type	_main, @function
+_main:
+	ADDI	R21, R0,  %hi(_A)
+	LSOI	R21, R21, %lo(_A)
+
+
+	LW	R22, 0(R21)
+	LW	R23, 4(R21)
+	NOP				; load delay slot for pf1
+	ADD	R24, R22, R23
+
+	ADDI	R25, R0,  %hi(_B)
+	LSOI	R25, R25, %lo(_B)
+
+	SW	0(R25), R24
+
+
+	jpr	r3		; return
+	.size	_main, .-_main
+	.ident	"GCC: (GNU) 4.2.2"
+
+
+
+
+hanlder.s
+=============
+; simple interrupt handler
+; written by Hirofumi IWATO
+; All Rights Reserved 2008. ASIP Solutions, Inc.
+
+	.section	.rodata
+	.section	.data
+	.section	.htext
+	.align 2
+	.globl	__ih_reset
+	.type	__ih_reset, @function
+__ih_reset:
+	xor	r16, r16, r16
+	jpr	r16		; goto 0x000000000
+
+CYCLES BEFORE FIXING THE MISMATCH
+===================================
+DLXSIM
+Total cycles = 29,0e0(29)
+Current cycleCount = 25  (Differs from the total cycles, if an cycleCount-overflow happened)
+
+Mult/Div/Mod Stalls = 0 cycles
+Load/Store Stalls = 6 cycles
+
+
+MOdelSim
+# *****      0 ClockCycles simulated *****
+#           ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# *****     75 ClockCycles altogether simulated *****
+
+
+CYCLES AFTER FIXING THE MISMATCH
+===================================
+DLXSIM
+============
+Total integer operations = 23
+
+Total cycles = 53,0e0(53)
+Current cycleCount = 33  (Differs from the total cycles, if an cycleCount-overflow happened)
+
+Mult/Div/Mod Stalls = 0 cycles
+Load/Store Stalls = 30 cycles
+
+
+MODELSIM
+==================
+# *****      0 ClockCycles simulated *****
+#           ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# *****     55 ClockCycles altogether simulated *****

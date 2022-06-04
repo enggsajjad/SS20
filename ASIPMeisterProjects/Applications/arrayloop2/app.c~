@@ -1,0 +1,29 @@
+//unsigned int A[10] = { 1,2,3,4,5,6,7,8,9,10};
+//unsigned int B[10] = { 51,52,53,54,55,56,57,58,59,60};
+//unsigned int C=45;
+/*int addition(int in1, int in2)
+{
+	int sum;
+	sum = in1+in2;
+	return (sum);
+}*/
+
+unsigned int A = 1;
+unsigned int B = 51;
+unsigned int C = 45;
+
+int addition(int x, int y)
+{
+  int z;
+  z = x+y;
+  return z;
+}
+
+int main() {
+  C = addition(A,B);
+  return 0;
+}
+
+
+
+

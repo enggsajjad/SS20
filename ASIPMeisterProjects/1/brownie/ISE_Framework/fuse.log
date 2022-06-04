@@ -1,0 +1,27 @@
+Running: /Software/xilinx/13.2/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_Framework/tf_deboun_isim_beh.exe -prj /home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_Framework/tf_deboun_beh.prj work.tf_deboun work.glbl 
+ISim O.61xd (signature 0x84a0141b)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file \"/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_Framework/tf_deboun.v\" into library work
+Analyzing Verilog file \"/Software/xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Parsing VHDL file "/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_Framework/Debouncer.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 30048 KB
+Fuse CPU Usage: 270 ms
+Compiling module tf_deboun
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity Debouncer [debouncer_default]
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable /home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_Framework/tf_deboun_isim_beh.exe
+Fuse Memory Usage: 81244 KB
+Fuse CPU Usage: 450 ms
+GCC CPU Usage: 550 ms

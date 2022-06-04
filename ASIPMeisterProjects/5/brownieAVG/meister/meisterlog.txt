@@ -1,0 +1,323 @@
+ Copyright (C) 2011 ASIP Solutions, Inc. All rights reserved. 
+12/5/18 5:15 PM : "Interface Definition" complete.
+12/5/18 5:15 PM : "Interface Definition" start browse.
+12/5/18 5:15 PM : "Interface Definition" finish browse.
+12/5/18 5:15 PM :  asm_translator asmdev browstd32AVG browstd32AVG_asm.log finished as normally.
+12/5/18 5:15 PM : Load file "browstd32AVG_asm.log".
+12/5/18 5:15 PM : "Assembler Generation" complete.
+12/5/18 5:15 PM : "Micro Op. Description" start browse.
+12/5/18 5:15 PM : "Micro Op. Description" finish browse.
+12/5/18 5:16 PM :  modelgen both browstd32AVG browstd32AVG_mod.log VHDL finished as normally.
+12/5/18 5:16 PM : Load file "browstd32AVG_mod.log".
+12/5/18 5:16 PM : "HDL Generation" complete.
+12/5/18 5:16 PM : "C Definition" complete.
+12/5/18 5:16 PM : "C Definition" start browse.
+12/5/18 5:16 PM : "C Definition" save
+12/5/18 5:16 PM : "C Definition" finish browse.
+12/5/18 5:17 PM : Load file "browstd32AVG_com.log".
+12/5/18 5:17 PM : "Compiler Generation" complete.
+12/5/18 5:31 PM : Load file "browstd32AVG_com.log".
+12/5/18 5:31 PM : "Compiler Generation" complete.
+12/5/18 5:57 PM : Save file "browstd32AVG.pdb".
+12/5/18 5:57 PM : "Main menu" quit.
+6/29/20 5:31 PM : "Main menu" start.
+6/29/20 5:31 PM : Load file "ASIPmeisterStd.ini".
+6/29/20 5:31 PM : Load file "browstd32AVG.pdb".
+6/29/20 5:31 PM : "Instruction Definition" complete.
+6/29/20 5:31 PM : "Instruction Definition" start browse.
+6/29/20 5:31 PM : "Instruction Definition" finish browse.
+6/29/20 5:31 PM : "C Definition" complete.
+6/29/20 5:31 PM : "C Definition" start browse.
+6/29/20 5:31 PM : "C Definition" finish browse.
+6/29/20 5:32 PM : Query "parameter(pcu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(register,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(mifu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(mifu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(multiplier,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(divider,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(shifter,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(wire_in,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(wire_out,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(register,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(dummy_register,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(browregfile,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/29/20 5:32 PM : Query "parameter(shifter,synthesis)" finished as normally.
+6/29/20 5:32 PM : "Resource Declaration" start browse.
+6/29/20 5:32 PM : Query "function(alu,synthesis,bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:32 PM : Query "portinfo(alu,synthesis,bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:32 PM : Query "shape(area,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:32 PM : Query "timing(delay,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:32 PM : Query "power(power,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:32 PM : Query "function(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:32 PM : Query "portinfo(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "shape(area,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "timing(delay,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "power(power,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "function(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "portinfo(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "shape(area,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "timing(delay,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "power(power,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/29/20 5:33 PM : Query "function(shifter,synthesis,bit_width=32:amount=variable)" finished as normally.
+6/29/20 5:33 PM : Query "portinfo(shifter,synthesis,bit_width=32:amount=variable)" finished as normally.
+6/29/20 5:33 PM : Query "shape(area,shifter,synthesis,priority=area:bit_width=32:amount=variable)" finished as normally.
+6/29/20 5:33 PM : Query "timing(delay,shifter,synthesis,priority=area:bit_width=32:amount=variable)" finished as normally.
+6/29/20 5:33 PM : Query "power(power,shifter,synthesis,priority=area:bit_width=32:amount=variable)" finished as normally.
+6/29/20 5:33 PM : Query "function(alu,synthesis,bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:33 PM : Query "portinfo(alu,synthesis,bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:33 PM : Query "shape(area,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:33 PM : Query "timing(delay,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:33 PM : Query "power(power,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+6/29/20 5:34 PM : Query "search()" finished as normally.
+6/29/20 5:34 PM : Query "search()" finished as normally.
+6/29/20 5:34 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/29/20 5:34 PM : Query "function(alu,synthesis,bit_width=4:algorithm=default)" finished as normally.
+6/29/20 5:34 PM : Query "portinfo(alu,synthesis,bit_width=4:algorithm=default)" finished as normally.
+6/29/20 5:35 PM : "Resource Declaration" finish browse.
+6/29/20 5:35 PM : "Instruction Definition" start browse.
+6/29/20 5:38 PM : "Instruction Definition" finish browse.
+6/29/20 5:39 PM : "Micro Op. Description" complete.
+6/29/20 5:39 PM : "Micro Op. Description" start browse.
+6/29/20 5:41 PM : "Micro Op. Description" finish browse.
+6/29/20 5:41 PM : "C Definition" start browse.
+6/29/20 5:44 PM : "C Definition" finish browse.
+6/29/20 5:44 PM : "Main menu" quit.
+6/30/20 11:59 PM : "Main menu" start.
+6/30/20 11:59 PM : Load file "ASIPmeisterStd.ini".
+6/30/20 11:59 PM : Load file "browstd32AVG.pdb".
+7/1/20 12:00 AM : Query "parameter(pcu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(register,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(mifu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(mifu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(alu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(multiplier,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(divider,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(extender,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(extender,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(extender,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(shifter,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(wire_in,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(wire_out,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(register,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(fwu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(fwu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(dummy_register,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(browregfile,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(extender,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(alu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(fwu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(fwu,synthesis)" finished as normally.
+7/1/20 12:00 AM : Query "parameter(shifter,synthesis)" finished as normally.
+7/1/20 12:00 AM : "Resource Declaration" start browse.
+7/1/20 12:00 AM : "Resource Declaration" finish browse.
+7/1/20 12:00 AM : "Instruction Definition" complete.
+7/1/20 12:00 AM : "Instruction Definition" start browse.
+7/1/20 12:08 AM : "Instruction Definition" finish browse.
+7/1/20 12:09 AM : "Micro Op. Description" complete.
+7/1/20 12:09 AM : "Micro Op. Description" start browse.
+7/1/20 12:16 AM : "Micro Op. Description" finish browse.
+7/1/20 12:16 AM : "Instruction Definition" start browse.
+7/1/20 12:16 AM : "Instruction Definition" re-edit.
+7/1/20 12:17 AM : "Instruction Definition" save
+7/1/20 12:17 AM : "Instruction Definition" complete.
+7/1/20 12:17 AM : "Instruction Definition" finish browse.
+7/1/20 12:18 AM : "Instruction Definition" start browse.
+7/1/20 12:18 AM : "Instruction Definition" re-edit.
+7/1/20 12:25 AM : "Instruction Definition" save
+7/1/20 12:25 AM : "Instruction Definition" complete.
+7/1/20 12:25 AM : "Instruction Definition" finish browse.
+7/1/20 12:27 AM : Save file "browstd32SWAP.pdb".
+7/1/20 12:27 AM : Load file "browstd32SWAP.pdb".
+7/1/20 12:27 AM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/1/20 12:27 AM : Load file "browstd32SWAP_arc.log".
+7/1/20 12:27 AM : "Arch. Level Estimation" complete.
+7/1/20 12:27 AM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/1/20 12:27 AM : Load file "browstd32SWAP_asm.log".
+7/1/20 12:27 AM : "Assembler Generation" complete.
+7/1/20 12:27 AM : "Micro Op. Description" start edit.
+7/1/20 12:38 AM : "Micro Op. Description" save
+7/1/20 12:38 AM : "Micro Op. Description" complete.
+7/1/20 12:38 AM : "Micro Op. Description" finish browse.
+7/1/20 12:38 AM : Save file "browstd32SWAP.pdb".
+7/1/20 12:38 AM : "Main menu" quit.
+7/1/20 2:32 AM : "Main menu" start.
+7/1/20 2:32 AM : Load file "ASIPmeisterStd.ini".
+7/1/20 2:32 AM : Load file "browstd32AVG.pdb".
+7/1/20 2:32 AM :  modelgen both browstd32AVG browstd32AVG_mod.log VHDL finished as normally.
+7/1/20 2:32 AM : Load file "browstd32AVG_mod.log".
+7/1/20 2:32 AM : "HDL Generation" complete.
+7/1/20 2:32 AM : "Micro Op. Description" complete.
+7/1/20 2:32 AM : "Micro Op. Description" start browse.
+7/1/20 2:32 AM : "Micro Op. Description" finish browse.
+7/1/20 2:33 AM : "Main menu" quit.
+7/1/20 4:22 AM : "Main menu" start.
+7/1/20 4:22 AM : Load file "ASIPmeisterStd.ini".
+7/1/20 4:22 AM : Load file "browstd32AVG.pdb".
+7/1/20 4:24 AM : Load file "browstd32.pdb".
+7/1/20 4:24 AM : "Instruction Definition" complete.
+7/1/20 4:24 AM : "Instruction Definition" start browse.
+7/1/20 4:24 AM : "Instruction Definition" finish browse.
+7/1/20 4:25 AM : Load file "browstd32FW2.pdb".
+7/1/20 4:25 AM : "Instruction Definition" complete.
+7/1/20 4:25 AM : "Instruction Definition" start browse.
+7/1/20 4:25 AM : "Instruction Definition" finish browse.
+7/1/20 4:26 AM : "Micro Op. Description" complete.
+7/1/20 4:26 AM : "Micro Op. Description" start browse.
+7/1/20 4:27 AM : "Main menu" start.
+7/1/20 4:27 AM : Load file "ASIPmeisterStd.ini".
+7/1/20 4:27 AM : Load file "browstd32AVG.pdb".
+7/1/20 4:27 AM : "Micro Op. Description" complete.
+7/1/20 4:27 AM : "Micro Op. Description" start browse.
+7/1/20 4:31 AM : "Micro Op. Description" finish browse.
+7/1/20 4:31 AM : "Main menu" quit.
+7/1/20 4:34 AM : "Micro Op. Description" finish browse.
+7/1/20 4:34 AM : "Main menu" quit.
+7/1/20 4:34 AM : "Main menu" start.
+7/1/20 4:34 AM : Load file "ASIPmeisterStd.ini".
+7/1/20 4:34 AM : Load file "browstd32AVG.pdb".
+7/1/20 4:34 AM : "Micro Op. Description" complete.
+7/1/20 4:34 AM : "Micro Op. Description" start browse.
+7/1/20 4:35 AM : "Micro Op. Description" re-edit.
+7/1/20 4:40 AM : "Micro Op. Description" save
+7/1/20 4:40 AM : "Micro Op. Description" complete.
+7/1/20 4:40 AM : "Micro Op. Description" finish browse.
+7/1/20 4:41 AM :  modelgen both browstd32AVG browstd32AVG_mod.log VHDL finished as normally.
+7/1/20 4:41 AM : Load file "browstd32AVG_mod.log".
+7/1/20 4:41 AM : "HDL Generation" complete.
+7/1/20 4:41 AM : "Main menu" quit.
+1/22/21 4:28 PM : "Main menu" start.
+1/22/21 4:28 PM : Load file "ASIPmeisterStd.ini".
+1/22/21 4:28 PM : Load file "browstd32AVG.pdb".
+1/22/21 4:28 PM : "Instruction Definition" complete.
+1/22/21 4:28 PM : "Instruction Definition" start browse.
+1/22/21 4:28 PM : "Instruction Definition" finish browse.
+1/22/21 4:29 PM : "Instruction Definition" start browse.
+1/22/21 4:30 PM : "Instruction Definition" re-edit.
+1/22/21 4:32 PM : "Instruction Definition" save
+1/22/21 4:32 PM : "Instruction Definition" complete.
+1/22/21 4:32 PM : "Instruction Definition" finish browse.
+1/22/21 4:32 PM : "Micro Op. Description" start edit.
+1/22/21 4:38 PM : "Micro Op. Description" finish edit.
+1/22/21 4:38 PM : Query "parameter(pcu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(register,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(mifu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(mifu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(alu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(multiplier,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(divider,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(extender,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(extender,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(extender,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(shifter,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(wire_in,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(wire_out,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(register,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(fwu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(fwu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(dummy_register,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(browregfile,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(extender,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(alu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(fwu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(fwu,synthesis)" finished as normally.
+1/22/21 4:38 PM : Query "parameter(shifter,synthesis)" finished as normally.
+1/22/21 4:38 PM : "Resource Declaration" start browse.
+1/22/21 4:39 PM : Query "function(browregfile,synthesis,bit_width=32:num_register=32:num_read_port=2:num_write_port=2:num_bank=1)" finished as normally.
+1/22/21 4:39 PM : Query "portinfo(browregfile,synthesis,bit_width=32:num_register=32:num_read_port=2:num_write_port=2:num_bank=1)" finished as normally.
+1/22/21 4:39 PM : Query "shape(area,browregfile,synthesis,priority=area:bit_width=32:num_register=32:num_read_port=2:num_write_port=2:num_bank=1)" finished as normally.
+1/22/21 4:39 PM : Query "timing(delay,browregfile,synthesis,priority=area:bit_width=32:num_register=32:num_read_port=2:num_write_port=2:num_bank=1)" finished as normally.
+1/22/21 4:39 PM : Query "power(power,browregfile,synthesis,priority=area:bit_width=32:num_register=32:num_read_port=2:num_write_port=2:num_bank=1)" finished as normally.
+1/22/21 4:39 PM : Query "function(alu,synthesis,bit_width=32:algorithm=default)" finished as normally.
+1/22/21 4:39 PM : Query "portinfo(alu,synthesis,bit_width=32:algorithm=default)" finished as normally.
+1/22/21 4:39 PM : Query "shape(area,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+1/22/21 4:39 PM : Query "timing(delay,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+1/22/21 4:39 PM : Query "power(power,alu,synthesis,priority=area:bit_width=32:algorithm=default)" finished as normally.
+1/22/21 4:39 PM : "Resource Declaration" finish browse.
+1/22/21 4:40 PM : "C Definition" start edit.
+1/22/21 4:40 PM : "C Definition" finish edit.
+1/22/21 4:42 PM : "Main menu" quit.
+6/30/21 5:59 AM : "Main menu" start.
+6/30/21 5:59 AM : Load file "ASIPmeisterStd.ini".
+6/30/21 5:59 AM : Load file "browstd32AVG.pdb".
+6/30/21 6:00 AM : Query "parameter(pcu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(register,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(mifu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(mifu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(alu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(multiplier,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(divider,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(extender,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(extender,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(extender,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(shifter,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(wire_in,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(wire_out,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(register,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(fwu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(fwu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(dummy_register,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(browregfile,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(extender,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(alu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(fwu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(fwu,synthesis)" finished as normally.
+6/30/21 6:00 AM : Query "parameter(shifter,synthesis)" finished as normally.
+6/30/21 6:00 AM : "Resource Declaration" start browse.
+6/30/21 6:00 AM : Query "function(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:00 AM : Query "portinfo(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:00 AM : Query "shape(area,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:00 AM : Query "timing(delay,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:00 AM : Query "power(power,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:01 AM : "Resource Declaration" finish browse.
+6/30/21 6:04 AM : Query "parameter(pcu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(register,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(mifu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(mifu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(alu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(multiplier,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(divider,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(extender,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(extender,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(extender,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(shifter,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(wire_in,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(wire_out,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(register,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(fwu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(fwu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(dummy_register,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(browregfile,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(extender,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(alu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(fwu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(fwu,synthesis)" finished as normally.
+6/30/21 6:04 AM : Query "parameter(shifter,synthesis)" finished as normally.
+6/30/21 6:04 AM : "Resource Declaration" start browse.
+6/30/21 6:04 AM : Query "function(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "portinfo(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "shape(area,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "timing(delay,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "power(power,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "function(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "portinfo(fwu,synthesis,bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "shape(area,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "timing(delay,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:04 AM : Query "power(power,fwu,synthesis,priority=area:bit_width=32:addr_width=5:stage_number=2)" finished as normally.
+6/30/21 6:05 AM : "Resource Declaration" finish browse.
+6/30/21 6:06 AM : "Instruction Definition" complete.
+6/30/21 6:06 AM : "Instruction Definition" start browse.
+6/30/21 6:11 AM : "Instruction Definition" finish browse.
+6/30/21 6:11 AM : "Micro Op. Description" complete.
+6/30/21 6:11 AM : "Micro Op. Description" start browse.
+6/30/21 6:21 AM : "Micro Op. Description" finish browse.
+6/30/21 6:23 AM : "Main menu" quit.

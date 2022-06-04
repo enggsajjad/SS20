@@ -1,0 +1,109 @@
+ Copyright (C) 2011 ASIP Solutions, Inc. All rights reserved. 
+2/27/21 12:56 AM : "Main menu" start.
+2/27/21 12:56 AM : Load file "ASIPmeisterStd.ini".
+2/27/21 12:56 AM : Load file "browstd32SWAP.pdb".
+2/27/21 12:56 AM : "Design Goal & Arch. Design" complete.
+2/27/21 12:56 AM : "" complete.
+2/27/21 12:56 AM : "" start browse.
+2/27/21 12:56 AM : "" save
+2/27/21 12:56 AM : "" complete.
+2/27/21 12:56 AM : "" finish browse.
+2/27/21 12:56 AM : "Design Goal & Arch. Design" start browse.
+2/27/21 12:57 AM : "Design Goal & Arch. Design" finish browse.
+2/27/21 12:57 AM : Query "parameter(pcu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(register,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(mifu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(mifu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(alu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(multiplier,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(divider,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(extender,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(extender,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(extender,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(shifter,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(wire_in,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(wire_out,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(register,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(fwu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(fwu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(dummy_register,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(browregfile,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(extender,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(alu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(fwu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(fwu,synthesis)" finished as normally.
+2/27/21 12:57 AM : Query "parameter(shifter,synthesis)" finished as normally.
+2/27/21 12:57 AM : "Resource Declaration" start browse.
+2/27/21 12:58 AM : "Resource Declaration" save
+2/27/21 12:58 AM : "Resource Declaration" finish browse.
+2/27/21 12:58 AM : "Storage Spec" complete.
+2/27/21 12:58 AM : "Storage Spec" start browse.
+2/27/21 12:58 AM : "Storage Spec" re-edit.
+2/27/21 12:59 AM : "Storage Spec" save
+2/27/21 12:59 AM : "Storage Spec" complete.
+2/27/21 12:59 AM : "Storage Spec" save
+2/27/21 12:59 AM : "Storage Spec" finish browse.
+2/27/21 12:59 AM : "Interface Definition" complete.
+2/27/21 12:59 AM : "Interface Definition" start browse.
+2/27/21 12:59 AM : "Interface Definition" re-edit.
+2/27/21 12:59 AM : "Interface Definition" save
+2/27/21 12:59 AM : "Interface Definition" complete.
+2/27/21 1:00 AM : "Interface Definition" save
+2/27/21 1:00 AM : "Interface Definition" finish browse.
+2/27/21 1:00 AM : "Instruction Definition" start edit.
+2/27/21 1:00 AM : "Instruction Definition" save
+2/27/21 1:00 AM : "Instruction Definition" complete.
+2/27/21 1:00 AM : "Instruction Definition" save
+2/27/21 1:00 AM : "Instruction Definition" finish browse.
+2/27/21 1:01 AM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+2/27/21 1:01 AM : Load file "browstd32SWAP_arc.log".
+2/27/21 1:01 AM : "Arch. Level Estimation" complete.
+2/27/21 1:01 AM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+2/27/21 1:01 AM : Load file "browstd32SWAP_asm.log".
+2/27/21 1:01 AM : "Assembler Generation" complete.
+2/27/21 1:01 AM : "Micro Op. Description" start edit.
+2/27/21 1:02 AM : "Micro Op. Description" save
+2/27/21 1:02 AM : "Micro Op. Description" complete.
+2/27/21 1:02 AM : "Micro Op. Description" save
+2/27/21 1:02 AM : "Micro Op. Description" finish browse.
+2/27/21 1:02 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+2/27/21 1:02 AM : Load file "browstd32SWAP_mod.log".
+2/27/21 1:02 AM : "HDL Generation" complete.
+2/27/21 1:03 AM : "Instruction Definition" start browse.
+2/27/21 1:03 AM : "Instruction Definition" finish browse.
+2/27/21 1:03 AM : "C Definition" start edit.
+2/27/21 1:04 AM : "C Definition" save
+2/27/21 1:04 AM : "C Definition" complete.
+2/27/21 1:04 AM : "C Definition" save
+2/27/21 1:04 AM : "C Definition" finish browse.
+2/27/21 1:05 AM : Load file "browstd32SWAP_com.log".
+2/27/21 1:06 AM : "Compiler Generation" complete.
+2/27/21 1:21 AM : Load file "browstd32SWAP_com.log".
+2/27/21 1:21 AM : "Compiler Generation" complete.
+2/27/21 1:22 AM : Save file "browstd32SWAP.pdb".
+2/27/21 1:22 AM : "Main menu" quit.
+3/3/21 8:30 PM : "Main menu" start.
+3/3/21 8:30 PM : Load file "ASIPmeisterStd.ini".
+3/3/21 8:30 PM : Load file "browstd32SWAP.pdb".
+3/3/21 8:33 PM : "Micro Op. Description" complete.
+3/3/21 8:33 PM : "Micro Op. Description" start browse.
+3/3/21 10:07 PM : "Micro Op. Description" re-edit.
+3/3/21 10:08 PM : "Micro Op. Description" save
+3/3/21 10:08 PM : "Micro Op. Description" complete.
+3/3/21 10:09 PM : "Micro Op. Description" save
+3/3/21 10:09 PM : "Micro Op. Description" finish browse.
+3/3/21 10:09 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+3/3/21 10:09 PM : Load file "browstd32SWAP_mod.log".
+3/3/21 10:09 PM : "HDL Generation" complete.
+3/3/21 10:09 PM : "C Definition" complete.
+3/3/21 10:09 PM : "C Definition" start browse.
+3/3/21 10:10 PM : "C Definition" finish browse.
+3/3/21 10:11 PM : Load file "browstd32SWAP_com.log".
+3/3/21 10:11 PM : "Compiler Generation" complete.
+3/3/21 10:30 PM : "Main menu" start.
+3/3/21 10:30 PM : Load file "ASIPmeisterStd.ini".
+3/3/21 10:30 PM : Load file "browstd32SWAP.pdb".
+3/3/21 11:13 PM : Load file "browstd32SWAP_com.log".
+3/3/21 11:14 PM : "Compiler Generation" complete.
+3/3/21 11:15 PM : Save file "browstd32SWAP.pdb".
+3/3/21 11:15 PM : "Main menu" quit.

@@ -1,0 +1,121 @@
+-bash-3.2$ pwd
+/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/Applications/sortingUART
+-bash-3.2$ 
+
+-bash-3.2$ make clean
+/bin/rm -rf BUILD_SIM
+-bash-3.2$ make sim
+-----------------------------------------------
+Compiling file "bubble_UART.c" for target SIMULATION:
+-----------------------------------------------
+TARGET = SIMULATION
+Compiling:          'brownie32-elf-gcc -O0 bubble_UART.c'
+Assembling:         'brownie32-elf-as bubble_UART.s'
+-----------------------------------------------
+FINISHED COMPILING file "bubble_UART.c" for target SIMULATION.
+-----------------------------------------------
+
+-----------------------------------------------
+Compiling file "lib_uart.c" for target SIMULATION:
+-----------------------------------------------
+TARGET = SIMULATION
+Compiling:          'brownie32-elf-gcc -O0 lib_uart.c'
+Assembling:         'brownie32-elf-as lib_uart.s'
+-----------------------------------------------
+FINISHED COMPILING file "lib_uart.c" for target SIMULATION.
+-----------------------------------------------
+
+-----------------------------------------------
+Compiling file "loadStoreByte.c" for target SIMULATION:
+-----------------------------------------------
+TARGET = SIMULATION
+Compiling:          'brownie32-elf-gcc -O0 loadStoreByte.c'
+Assembling:         'brownie32-elf-as loadStoreByte.s'
+-----------------------------------------------
+FINISHED COMPILING file "loadStoreByte.c" for target SIMULATION.
+-----------------------------------------------
+
+-----------------------------------------------
+Compiling file "string.c" for target SIMULATION:
+-----------------------------------------------
+TARGET = SIMULATION
+Compiling:          'brownie32-elf-gcc -O0 string.c'
+Assembling:         'brownie32-elf-as string.s'
+-----------------------------------------------
+FINISHED COMPILING file "string.c" for target SIMULATION.
+-----------------------------------------------
+
+-----------------------------------------------
+Assembling/Linking for target SIMULATION:1
+-----------------------------------------------
+STACK_START:			0x0017EFFC
+Generating TestData files...
+TestData files copied to Modelsim folder.
+FINISHED ASSEMBLING/LINKING for target SIMULATION.
+-----------------------------------------------
+
+-bash-3.2$ make dlxsim DLXSIM_PARAM="-da0 -pf1 -ufBubbleUART.out"
+-----------------------------------------------
+Compiling file "bubble_UART.c" for target SIMULATION:
+-----------------------------------------------
+TARGET = SIMULATION
+Compiling:          'brownie32-elf-gcc -O0 bubble_UART.c'
+Assembling:         'brownie32-elf-as bubble_UART.s'
+-----------------------------------------------
+FINISHED COMPILING file "bubble_UART.c" for target SIMULATION.
+-----------------------------------------------
+
+-----------------------------------------------
+Compiling file "lib_uart.c" for target SIMULATION:
+-----------------------------------------------
+TARGET = SIMULATION
+Compiling:          'brownie32-elf-gcc -O0 lib_uart.c'
+Assembling:         'brownie32-elf-as lib_uart.s'
+-----------------------------------------------
+FINISHED COMPILING file "lib_uart.c" for target SIMULATION.
+-----------------------------------------------
+
+-----------------------------------------------
+Compiling file "loadStoreByte.c" for target SIMULATION:
+-----------------------------------------------
+TARGET = SIMULATION
+Compiling:          'brownie32-elf-gcc -O0 loadStoreByte.c'
+Assembling:         'brownie32-elf-as loadStoreByte.s'
+-----------------------------------------------
+FINISHED COMPILING file "loadStoreByte.c" for target SIMULATION.
+-----------------------------------------------
+
+-----------------------------------------------
+Compiling file "string.c" for target SIMULATION:
+-----------------------------------------------
+TARGET = SIMULATION
+Compiling:          'brownie32-elf-gcc -O0 string.c'
+Assembling:         'brownie32-elf-as string.s'
+-----------------------------------------------
+FINISHED COMPILING file "string.c" for target SIMULATION.
+-----------------------------------------------
+
+-----------------------------------------------
+Assembling/Linking for target SIMULATION::
+-----------------------------------------------
+STACK_START:			0x0017EFFC
+-----------------------------------------------
+FINISHED ASSEMBLING/LINKING for target SIMULATION.
+-----------------------------------------------
+ 
+ 
+-----------------------------------------------
+Starting dlxsim:
+-----------------------------------------------
+/home/sajjad/WS18/dlxsimbr/dlxsim -fBUILD_SIM/sortingUART.dlxsim -da0 -pf1 -ufBubbleUART.out
+Biggest used address for Text Section (word aligned): 0x1558
+Biggest used address for Data Section (word aligned): 0x1620
+(dlxsim) go
+TRAP #0 received
+Altogether 60,0e3(60072) cycles executed.
+  0 Warnings for unresolved data dependencies printed.
+  0 Warnings for successive load/store commands printed.
+  0 Warnings for load/stores in the text section printed.
+(dlxsim) q
+-bash-3.2$ 
+

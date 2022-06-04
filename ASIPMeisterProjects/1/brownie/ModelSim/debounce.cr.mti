@@ -1,0 +1,26 @@
+/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ModelSim/debouncer.vhd {1 {vcom -work work -2002 -explicit -vopt /home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ModelSim/debouncer.vhd
+Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package debounce_pack
+-- Compiling entity debouncer
+-- Compiling architecture rtl of debouncer
+
+} {} {}} /home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ModelSim/debounce_pack.vhd {1 {vcom -work work -2002 -explicit -vopt /home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ModelSim/debounce_pack.vhd
+Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Compiling package debounce_pack
+
+} {} {}} /home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ModelSim/tb_debouncer.vhd {1 {vcom -work work -2002 -explicit -vopt /home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ModelSim/tb_debouncer.vhd
+Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tb_debouncer
+-- Compiling architecture behavior of tb_debouncer
+
+} {} {}}

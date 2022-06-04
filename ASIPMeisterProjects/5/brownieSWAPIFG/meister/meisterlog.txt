@@ -1,0 +1,769 @@
+ Copyright (C) 2011 ASIP Solutions, Inc. All rights reserved. 
+7/1/20 12:41 AM : "Main menu" start.
+7/1/20 12:41 AM : Load file "ASIPmeisterStd.ini".
+7/1/20 12:41 AM : Load file "browstd32SWAP.pdb".
+7/1/20 12:41 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/1/20 12:41 AM : Load file "browstd32SWAP_mod.log".
+7/1/20 12:41 AM : "HDL Generation" complete.
+7/1/20 12:41 AM : "Micro Op. Description" complete.
+7/1/20 12:41 AM : "Micro Op. Description" start browse.
+7/1/20 12:42 AM : "Micro Op. Description" re-edit.
+7/1/20 12:42 AM : "Micro Op. Description" save
+7/1/20 12:42 AM : "Micro Op. Description" complete.
+7/1/20 12:42 AM : "Micro Op. Description" finish browse.
+7/1/20 12:42 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/1/20 12:42 AM : Load file "browstd32SWAP_mod.log".
+7/1/20 12:42 AM : "HDL Generation" complete.
+7/1/20 12:44 AM : "C Definition" start edit.
+7/1/20 12:45 AM : "C Definition" save
+7/1/20 12:45 AM : "C Definition" complete.
+7/1/20 12:45 AM : "C Definition" finish browse.
+7/1/20 12:46 AM : Load file "browstd32SWAP_com.log".
+7/1/20 12:47 AM : "Compiler Generation" complete.
+7/1/20 1:04 AM : Load file "browstd32SWAP_com.log".
+7/1/20 1:04 AM : "Compiler Generation" complete.
+7/1/20 1:05 AM : "Instruction Definition" complete.
+7/1/20 1:05 AM : "Instruction Definition" start browse.
+7/1/20 1:05 AM : "Instruction Definition" re-edit.
+7/1/20 1:09 AM : "Instruction Definition" save
+7/1/20 1:09 AM : "Instruction Definition" complete.
+7/1/20 1:09 AM : "Instruction Definition" finish browse.
+7/1/20 1:09 AM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/1/20 1:09 AM : Load file "browstd32SWAP_arc.log".
+7/1/20 1:09 AM : "Arch. Level Estimation" complete.
+7/1/20 1:10 AM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/1/20 1:10 AM : Load file "browstd32SWAP_asm.log".
+7/1/20 1:10 AM : "Assembler Generation" complete.
+7/1/20 1:10 AM : "Instruction Definition" start browse.
+7/1/20 1:10 AM : "Instruction Definition" finish browse.
+7/1/20 1:10 AM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/1/20 1:10 AM : Load file "browstd32SWAP_asm.log".
+7/1/20 1:10 AM : "Assembler Generation" complete.
+7/1/20 1:11 AM : "Micro Op. Description:READ ONLY" start edit.
+7/1/20 1:11 AM : "Micro Op. Description:READ ONLY" finish edit.
+7/1/20 1:12 AM : "Micro Op. Description:READ ONLY" start edit.
+7/1/20 1:12 AM : "Micro Op. Description:READ ONLY" save
+7/1/20 1:12 AM : "Micro Op. Description:READ ONLY" finish edit.
+7/1/20 1:12 AM : "Instruction Definition:READ ONLY" start browse.
+7/1/20 1:13 AM : "Instruction Definition:READ ONLY" save
+7/1/20 1:13 AM : "Instruction Definition:READ ONLY" finish browse.
+7/1/20 1:13 AM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/1/20 1:13 AM : Load file "browstd32SWAP_arc.log".
+7/1/20 1:13 AM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/1/20 1:13 AM : Load file "browstd32SWAP_asm.log".
+7/1/20 1:14 AM : "Micro Op. Description:READ ONLY" start edit.
+7/1/20 1:14 AM : "Micro Op. Description:READ ONLY" finish edit.
+7/1/20 1:14 AM : "Design Goal & Arch. Design:READ ONLY" complete.
+7/1/20 1:14 AM : "" start edit.
+7/1/20 1:14 AM : "" save
+7/1/20 1:14 AM : "" re-edit.
+7/1/20 1:14 AM : "" finish edit.
+7/1/20 1:14 AM : "Design Goal & Arch. Design:READ ONLY" start browse.
+7/1/20 1:14 AM : "Design Goal & Arch. Design:READ ONLY" finish browse.
+7/1/20 1:14 AM : "C Definition" finish edit.
+7/1/20 1:15 AM : "Main menu" quit.
+7/1/20 1:15 AM : "Main menu" start.
+7/1/20 1:15 AM : Load file "ASIPmeisterStd.ini".
+7/1/20 1:15 AM : Load file "browstd32SWAP.pdb".
+7/1/20 1:15 AM : "C Definition" start edit.
+7/1/20 1:15 AM : "C Definition" finish edit.
+7/1/20 1:15 AM : "Design Goal & Arch. Design" complete.
+7/1/20 1:15 AM : "" complete.
+7/1/20 1:15 AM : "" start browse.
+7/1/20 1:15 AM : "" save
+7/1/20 1:15 AM : "" complete.
+7/1/20 1:15 AM : "" finish browse.
+7/1/20 1:15 AM : "Design Goal & Arch. Design" start browse.
+7/1/20 1:15 AM : "Instruction Definition:READ ONLY" complete.
+7/1/20 1:15 AM : "Instruction Definition:READ ONLY" start browse.
+7/1/20 1:16 AM : "Instruction Definition:READ ONLY" finish browse.
+7/1/20 1:16 AM : "Design Goal & Arch. Design" finish browse.
+7/1/20 1:16 AM : Query "parameter(pcu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(register,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(mifu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(mifu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(alu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(multiplier,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(divider,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(extender,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(extender,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(extender,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(shifter,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(wire_in,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(wire_out,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(register,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(fwu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(fwu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(dummy_register,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(browregfile,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(extender,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(alu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(fwu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(fwu,synthesis)" finished as normally.
+7/1/20 1:16 AM : Query "parameter(shifter,synthesis)" finished as normally.
+7/1/20 1:16 AM : "Resource Declaration" start browse.
+7/1/20 1:16 AM : "Resource Declaration" finish browse.
+7/1/20 1:16 AM : "Storage Spec" complete.
+7/1/20 1:16 AM : "Storage Spec" start browse.
+7/1/20 1:16 AM : "Storage Spec" finish browse.
+7/1/20 1:16 AM : "Interface Definition" complete.
+7/1/20 1:16 AM : "Interface Definition" start browse.
+7/1/20 1:16 AM : "Interface Definition" finish browse.
+7/1/20 1:16 AM : "Instruction Definition" start browse.
+7/1/20 1:17 AM : "Instruction Definition" re-edit.
+7/1/20 1:19 AM : "Instruction Definition" save
+7/1/20 1:19 AM : "Instruction Definition" complete.
+7/1/20 1:19 AM : "Instruction Definition" finish browse.
+7/1/20 1:19 AM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/1/20 1:19 AM : Load file "browstd32SWAP_arc.log".
+7/1/20 1:19 AM : "Arch. Level Estimation" complete.
+7/1/20 1:19 AM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/1/20 1:19 AM : Load file "browstd32SWAP_asm.log".
+7/1/20 1:19 AM : "Assembler Generation" complete.
+7/1/20 1:19 AM : "Micro Op. Description" start edit.
+7/1/20 1:32 AM : "Micro Op. Description" save
+7/1/20 1:32 AM : "Micro Op. Description" complete.
+7/1/20 1:32 AM : "Micro Op. Description" finish browse.
+7/1/20 1:33 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/1/20 1:33 AM : Load file "browstd32SWAP_mod.log".
+7/1/20 1:33 AM : "HDL Generation" complete.
+7/1/20 1:33 AM : "Micro Op. Description" start browse.
+7/1/20 1:33 AM : "Micro Op. Description" re-edit.
+7/1/20 1:34 AM : "Micro Op. Description" save
+7/1/20 1:34 AM : "Micro Op. Description" complete.
+7/1/20 1:35 AM : "Micro Op. Description" finish browse.
+7/1/20 1:35 AM : "Interface Definition" start browse.
+7/1/20 1:35 AM : "Interface Definition" finish browse.
+7/1/20 1:35 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/1/20 1:35 AM : Load file "browstd32SWAP_mod.log".
+7/1/20 1:35 AM : "HDL Generation" complete.
+7/1/20 1:35 AM : "C Definition" start edit.
+7/1/20 1:36 AM : "C Definition" save
+7/1/20 1:36 AM : "C Definition" complete.
+7/1/20 1:36 AM : "C Definition" finish browse.
+7/1/20 1:36 AM : Load file "browstd32SWAP_com.log".
+7/1/20 1:37 AM : "Compiler Generation" complete.
+7/1/20 1:55 AM : Load file "browstd32SWAP_com.log".
+7/1/20 1:55 AM : "Compiler Generation" complete.
+7/1/20 1:55 AM : Save file "browstd32SWAP.pdb".
+7/1/20 1:57 AM : "Main menu" quit.
+7/1/20 2:08 AM : "Main menu" start.
+7/1/20 2:08 AM : Load file "ASIPmeisterStd.ini".
+7/1/20 2:08 AM : Load file "browstd32SWAP.pdb".
+7/1/20 2:08 AM : "Instruction Definition" complete.
+7/1/20 2:08 AM : "Instruction Definition" start browse.
+7/1/20 2:09 AM : "Instruction Definition" finish browse.
+7/1/20 2:09 AM : "Micro Op. Description" complete.
+7/1/20 2:09 AM : "Micro Op. Description" start browse.
+7/1/20 2:09 AM : "Micro Op. Description" finish browse.
+7/1/20 2:23 AM : "Main menu" quit.
+7/1/20 5:24 PM : "Main menu" start.
+7/1/20 5:24 PM : Load file "ASIPmeisterStd.ini".
+7/1/20 5:24 PM : Load file "browstd32SWAP.pdb".
+7/1/20 5:24 PM : "Instruction Definition" complete.
+7/1/20 5:24 PM : "Instruction Definition" start browse.
+7/1/20 5:24 PM : "Instruction Definition" re-edit.
+7/1/20 5:26 PM : "Instruction Definition" save
+7/1/20 5:26 PM : "Instruction Definition" complete.
+7/1/20 5:26 PM : "Instruction Definition" re-edit.
+7/1/20 5:31 PM : "Instruction Definition" save
+7/1/20 5:31 PM : "Instruction Definition" complete.
+7/1/20 5:31 PM : "Instruction Definition" finish browse.
+7/1/20 5:31 PM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/1/20 5:31 PM : Load file "browstd32SWAP_arc.log".
+7/1/20 5:31 PM : "Arch. Level Estimation" complete.
+7/1/20 5:31 PM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/1/20 5:31 PM : Load file "browstd32SWAP_asm.log".
+7/1/20 5:31 PM : "Assembler Generation" complete.
+7/1/20 5:31 PM : "Micro Op. Description" start edit.
+7/1/20 5:48 PM : "Micro Op. Description" save
+7/1/20 5:48 PM : "Micro Op. Description" complete.
+7/1/20 5:48 PM : "Micro Op. Description" save
+7/1/20 5:48 PM : "Micro Op. Description" finish browse.
+7/1/20 5:48 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/1/20 5:48 PM : Load file "browstd32SWAP_mod.log".
+7/1/20 5:48 PM : "HDL Generation" complete.
+7/1/20 5:48 PM : "Micro Op. Description" start browse.
+7/1/20 5:48 PM : "Micro Op. Description" re-edit.
+7/1/20 5:49 PM : "Micro Op. Description" save
+7/1/20 5:49 PM : "Micro Op. Description" complete.
+7/1/20 5:49 PM : "Micro Op. Description" save
+7/1/20 5:49 PM : "Micro Op. Description" finish browse.
+7/1/20 5:49 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/1/20 5:49 PM : Load file "browstd32SWAP_mod.log".
+7/1/20 5:49 PM : "HDL Generation" complete.
+7/1/20 5:49 PM : "C Definition" start edit.
+7/1/20 5:50 PM : "C Definition" save
+7/1/20 5:50 PM : "C Definition" complete.
+7/1/20 5:50 PM : "C Definition" finish browse.
+7/1/20 5:51 PM : Load file "browstd32SWAP_com.log".
+7/1/20 5:51 PM : "Compiler Generation" complete.
+7/1/20 6:07 PM : Load file "browstd32SWAP_com.log".
+7/1/20 6:07 PM : "Compiler Generation" complete.
+7/1/20 6:19 PM : Save file "browstd32SWAP.pdb".
+7/1/20 6:19 PM : "Main menu" quit.
+7/2/20 3:48 AM : "Main menu" start.
+7/2/20 3:48 AM : Load file "ASIPmeisterStd.ini".
+7/2/20 3:48 AM : Load file "browstd32SWAP.pdb".
+7/2/20 3:49 AM : "Micro Op. Description" complete.
+7/2/20 3:49 AM : "Micro Op. Description" start browse.
+7/2/20 4:02 AM : "Micro Op. Description" finish browse.
+7/2/20 4:03 AM : Load file "browstd32P.pdb".
+7/2/20 4:03 AM : "Instruction Definition" complete.
+7/2/20 4:03 AM : "Instruction Definition" start browse.
+7/2/20 4:03 AM : "Instruction Definition" finish browse.
+7/2/20 4:04 AM : Load file "browstd32SWAP.pdb".
+7/2/20 4:04 AM : "Micro Op. Description" complete.
+7/2/20 4:04 AM : "Micro Op. Description" start browse.
+7/2/20 4:15 AM : "Micro Op. Description" finish browse.
+7/2/20 4:15 AM : "Main menu" quit.
+7/3/20 12:34 PM : "Main menu" start.
+7/3/20 12:34 PM : Load file "ASIPmeisterStd.ini".
+7/3/20 12:34 PM : Load file "browstd32SWAP.pdb".
+7/3/20 12:34 PM : "Instruction Definition" complete.
+7/3/20 12:34 PM : "Instruction Definition" start browse.
+7/3/20 12:38 PM : "Instruction Definition" finish browse.
+7/3/20 12:39 PM : "Micro Op. Description" complete.
+7/3/20 12:39 PM : "Micro Op. Description" start browse.
+7/3/20 12:53 PM : "Micro Op. Description" re-edit.
+7/3/20 12:53 PM : "Micro Op. Description" save
+7/3/20 12:53 PM : "Micro Op. Description" complete.
+7/3/20 12:53 PM : "Micro Op. Description" save
+7/3/20 12:53 PM : "Micro Op. Description" finish browse.
+7/3/20 12:53 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 12:53 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 12:53 PM : "HDL Generation" complete.
+7/3/20 12:54 PM : "Micro Op. Description" start browse.
+7/3/20 12:54 PM : "Micro Op. Description" re-edit.
+7/3/20 12:55 PM : "Micro Op. Description" save
+7/3/20 12:55 PM : "Micro Op. Description" complete.
+7/3/20 12:55 PM : "Micro Op. Description" finish browse.
+7/3/20 12:55 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 12:55 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 12:55 PM : "HDL Generation" complete.
+7/3/20 12:58 PM : "Micro Op. Description" start browse.
+7/3/20 1:00 PM : "Micro Op. Description" re-edit.
+7/3/20 1:01 PM : "Micro Op. Description" save
+7/3/20 1:01 PM : "Micro Op. Description" complete.
+7/3/20 1:01 PM : "Micro Op. Description" finish browse.
+7/3/20 1:01 PM : Query "parameter(pcu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(register,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(mifu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(mifu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(alu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(multiplier,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(divider,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(shifter,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(wire_in,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(wire_out,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(register,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(dummy_register,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(browregfile,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(alu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 1:01 PM : Query "parameter(shifter,synthesis)" finished as normally.
+7/3/20 1:01 PM : "Resource Declaration" start browse.
+7/3/20 1:01 PM : Query "function(extender,synthesis,bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 1:01 PM : Query "portinfo(extender,synthesis,bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 1:01 PM : Query "shape(area,extender,synthesis,priority=area:bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 1:01 PM : Query "timing(delay,extender,synthesis,priority=area:bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 1:01 PM : Query "power(power,extender,synthesis,priority=area:bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 1:02 PM : "Resource Declaration" finish browse.
+7/3/20 1:03 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 1:03 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 1:03 PM : "HDL Generation" complete.
+7/3/20 1:03 PM : "C Definition" complete.
+7/3/20 1:03 PM : "C Definition" start browse.
+7/3/20 1:03 PM : "C Definition" finish browse.
+7/3/20 1:03 PM : Save file "browstd32SWAP.pdb".
+7/3/20 1:03 PM : "Main menu" quit.
+7/3/20 2:56 PM : "Main menu" start.
+7/3/20 2:56 PM : Load file "ASIPmeisterStd.ini".
+7/3/20 2:56 PM : Load file "browstd32SWAP.pdb".
+7/3/20 2:57 PM : "Instruction Definition" complete.
+7/3/20 2:57 PM : "Instruction Definition" start browse.
+7/3/20 2:57 PM : "Instruction Definition" re-edit.
+7/3/20 2:59 PM : "Instruction Definition" save
+7/3/20 2:59 PM : "Instruction Definition" complete.
+7/3/20 2:59 PM : "Instruction Definition" finish browse.
+7/3/20 2:59 PM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/3/20 2:59 PM : Load file "browstd32SWAP_arc.log".
+7/3/20 2:59 PM : "Arch. Level Estimation" complete.
+7/3/20 3:00 PM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/3/20 3:00 PM : Load file "browstd32SWAP_asm.log".
+7/3/20 3:00 PM : "Assembler Generation" complete.
+7/3/20 3:00 PM : "Micro Op. Description" start edit.
+7/3/20 3:02 PM : "Micro Op. Description" save
+7/3/20 3:02 PM : "Micro Op. Description" complete.
+7/3/20 3:02 PM : "Micro Op. Description" finish browse.
+7/3/20 3:03 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 3:03 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 3:03 PM : "HDL Generation" complete.
+7/3/20 3:05 PM : "C Definition" start edit.
+7/3/20 3:06 PM : "C Definition" save
+7/3/20 3:06 PM : "C Definition" complete.
+7/3/20 3:06 PM : "C Definition" finish browse.
+7/3/20 3:06 PM : Load file "browstd32SWAP_com.log".
+7/3/20 3:06 PM : "Compiler Generation" complete.
+7/3/20 3:23 PM : Load file "browstd32SWAP_com.log".
+7/3/20 3:23 PM : "Compiler Generation" complete.
+7/3/20 4:02 PM : "Micro Op. Description" start browse.
+7/3/20 4:19 PM : "Micro Op. Description with Macro Expansion" finish edit.
+7/3/20 4:19 PM : "Micro Op. Description" re-edit.
+7/3/20 4:30 PM : "Micro Op. Description" save
+7/3/20 4:30 PM : "Micro Op. Description" complete.
+7/3/20 4:30 PM : "Micro Op. Description" finish browse.
+7/3/20 4:30 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 4:30 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 4:30 PM : "HDL Generation" complete.
+7/3/20 4:30 PM : "Micro Op. Description" start browse.
+7/3/20 4:31 PM : "Micro Op. Description" finish browse.
+7/3/20 4:31 PM : "Instruction Definition" start browse.
+7/3/20 4:31 PM : "Instruction Definition" re-edit.
+7/3/20 4:32 PM : "Instruction Definition" save
+7/3/20 4:32 PM : "Instruction Definition" complete.
+7/3/20 4:32 PM : "Instruction Definition" finish browse.
+7/3/20 4:33 PM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/3/20 4:33 PM : Load file "browstd32SWAP_arc.log".
+7/3/20 4:33 PM : "Arch. Level Estimation" complete.
+7/3/20 4:33 PM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/3/20 4:33 PM : Load file "browstd32SWAP_asm.log".
+7/3/20 4:33 PM : "Assembler Generation" complete.
+7/3/20 4:33 PM : "Instruction Definition" start browse.
+7/3/20 4:33 PM : "Instruction Definition" re-edit.
+7/3/20 4:33 PM : "Instruction Definition" save
+7/3/20 4:33 PM : "Instruction Definition" complete.
+7/3/20 4:33 PM : "Instruction Definition" finish browse.
+7/3/20 4:34 PM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/3/20 4:34 PM : Load file "browstd32SWAP_arc.log".
+7/3/20 4:34 PM : "Arch. Level Estimation" complete.
+7/3/20 4:34 PM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/3/20 4:34 PM : Load file "browstd32SWAP_asm.log".
+7/3/20 4:34 PM : "Assembler Generation" complete.
+7/3/20 4:34 PM : "Micro Op. Description" start edit.
+7/3/20 4:34 PM : "Micro Op. Description" save
+7/3/20 4:34 PM : "Micro Op. Description" complete.
+7/3/20 4:34 PM : "Micro Op. Description" finish browse.
+7/3/20 4:34 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 4:34 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 4:34 PM : "HDL Generation" complete.
+7/3/20 4:35 PM : "Micro Op. Description" start browse.
+7/3/20 4:35 PM : "Micro Op. Description" re-edit.
+7/3/20 4:36 PM : "Micro Op. Description" save
+7/3/20 4:36 PM : "Micro Op. Description" complete.
+7/3/20 4:36 PM : "Micro Op. Description" finish browse.
+7/3/20 4:36 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 4:36 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 4:36 PM : "HDL Generation" complete.
+7/3/20 4:36 PM : "C Definition" start edit.
+7/3/20 4:36 PM : "C Definition" save
+7/3/20 4:36 PM : "C Definition" complete.
+7/3/20 4:36 PM : "C Definition" re-edit.
+7/3/20 4:37 PM : "C Definition" save
+7/3/20 4:37 PM : "C Definition" complete.
+7/3/20 4:38 PM : "C Definition" finish browse.
+7/3/20 4:38 PM : Load file "browstd32SWAP_com.log".
+7/3/20 4:38 PM : "Compiler Generation" complete.
+7/3/20 4:55 PM : Load file "browstd32SWAP_com.log".
+7/3/20 4:55 PM : "Compiler Generation" complete.
+7/3/20 4:55 PM : Save file "browstd32SWAP.pdb".
+7/3/20 4:56 PM : Query "parameter(pcu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(register,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(mifu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(mifu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(alu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(multiplier,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(divider,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(shifter,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(wire_in,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(wire_out,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(register,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(dummy_register,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(browregfile,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(alu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 4:56 PM : Query "parameter(shifter,synthesis)" finished as normally.
+7/3/20 4:56 PM : "Resource Declaration" start browse.
+7/3/20 4:57 PM : "Resource Declaration" finish browse.
+7/3/20 4:57 PM : "Micro Op. Description" start browse.
+7/3/20 4:58 PM : "Micro Op. Description" re-edit.
+7/3/20 4:59 PM : "Micro Op. Description" save
+7/3/20 4:59 PM : "Micro Op. Description" complete.
+7/3/20 4:59 PM : "Micro Op. Description" finish browse.
+7/3/20 4:59 PM : "Micro Op. Description" start browse.
+7/3/20 5:00 PM : "Micro Op. Description" re-edit.
+7/3/20 5:00 PM : "Micro Op. Description" save
+7/3/20 5:00 PM : "Micro Op. Description" complete.
+7/3/20 5:01 PM : "Micro Op. Description" finish browse.
+7/3/20 5:01 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 5:01 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 5:01 PM : "HDL Generation" complete.
+7/3/20 5:14 PM : "Instruction Definition" start browse.
+7/3/20 5:36 PM : "Instruction Definition" finish browse.
+7/3/20 5:37 PM : "Micro Op. Description" start browse.
+7/3/20 5:38 PM : "Micro Op. Description" re-edit.
+7/3/20 5:50 PM : "Micro Op. Description" save
+7/3/20 5:50 PM : "Micro Op. Description" complete.
+7/3/20 5:50 PM : "Micro Op. Description" finish browse.
+7/3/20 5:50 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 5:50 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 5:50 PM : "HDL Generation" complete.
+7/3/20 5:50 PM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/3/20 5:50 PM : Load file "browstd32SWAP_asm.log".
+7/3/20 5:50 PM : "Assembler Generation" complete.
+7/3/20 5:50 PM : "Micro Op. Description" start browse.
+7/3/20 5:50 PM : "Micro Op. Description" re-edit.
+7/3/20 5:51 PM : "Micro Op. Description" save
+7/3/20 5:51 PM : "Micro Op. Description" complete.
+7/3/20 5:51 PM : "Micro Op. Description" finish browse.
+7/3/20 5:51 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 5:51 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 5:51 PM : "HDL Generation" complete.
+7/3/20 5:51 PM : "C Definition" start browse.
+7/3/20 5:51 PM : "C Definition" re-edit.
+7/3/20 5:57 PM : "C Definition" save
+7/3/20 5:57 PM : "C Definition" complete.
+7/3/20 5:57 PM : "C Definition" finish browse.
+7/3/20 5:57 PM : Load file "browstd32SWAP_com.log".
+7/3/20 5:57 PM : "Compiler Generation" complete.
+7/3/20 6:14 PM : Load file "browstd32SWAP_com.log".
+7/3/20 6:14 PM : "Compiler Generation" complete.
+7/3/20 6:14 PM : Save file "browstd32SWAP.pdb".
+7/3/20 6:19 PM : "Micro Op. Description" start browse.
+7/3/20 6:23 PM : "Micro Op. Description" re-edit.
+7/3/20 6:25 PM : "Micro Op. Description" save
+7/3/20 6:25 PM : "Micro Op. Description" complete.
+7/3/20 6:25 PM : "Micro Op. Description" finish browse.
+7/3/20 6:25 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 6:25 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 6:25 PM : "HDL Generation" complete.
+7/3/20 6:25 PM : "Micro Op. Description" start browse.
+7/3/20 6:25 PM : "Micro Op. Description" re-edit.
+7/3/20 6:26 PM : "Micro Op. Description" save
+7/3/20 6:26 PM : "Micro Op. Description" complete.
+7/3/20 6:26 PM : "Micro Op. Description" save
+7/3/20 6:26 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 6:26 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 6:26 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 6:26 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 6:27 PM : "C Definition:READ ONLY" start browse.
+7/3/20 6:27 PM : "C Definition:READ ONLY" finish browse.
+7/3/20 6:27 PM : Load file "browstd32SWAP_com.log".
+7/3/20 6:42 PM : "Micro Op. Description" finish browse.
+7/3/20 6:43 PM : Load file "browstd32SWAP_com.log".
+7/3/20 6:44 PM : Save file "browstd32SWAP.pdb".
+7/3/20 6:46 PM : "Micro Op. Description" start browse.
+7/3/20 6:47 PM : "Micro Op. Description" re-edit.
+7/3/20 6:48 PM : "Micro Op. Description" save
+7/3/20 6:48 PM : "Micro Op. Description" complete.
+7/3/20 6:49 PM : "Micro Op. Description" finish browse.
+7/3/20 6:49 PM : Query "parameter(pcu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(register,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(mifu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(mifu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(alu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(multiplier,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(divider,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(shifter,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(wire_in,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(wire_out,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(register,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(dummy_register,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(browregfile,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(extender,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(alu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(fwu,synthesis)" finished as normally.
+7/3/20 6:49 PM : Query "parameter(shifter,synthesis)" finished as normally.
+7/3/20 6:49 PM : "Resource Declaration" start browse.
+7/3/20 6:49 PM : Query "function(extender,synthesis,bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 6:49 PM : Query "portinfo(extender,synthesis,bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 6:49 PM : Query "shape(area,extender,synthesis,priority=area:bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 6:49 PM : Query "timing(delay,extender,synthesis,priority=area:bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 6:49 PM : Query "power(power,extender,synthesis,priority=area:bit_width=16:bit_width_out=32)" finished as normally.
+7/3/20 6:49 PM : "Resource Declaration" finish browse.
+7/3/20 6:49 PM : "Micro Op. Description" start browse.
+7/3/20 6:49 PM : "Micro Op. Description" re-edit.
+7/3/20 6:50 PM : "Micro Op. Description" save
+7/3/20 6:50 PM : "Micro Op. Description" complete.
+7/3/20 6:50 PM : "Micro Op. Description" finish browse.
+7/3/20 6:50 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 6:50 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 6:50 PM : "HDL Generation" complete.
+7/3/20 6:50 PM : "C Definition" start browse.
+7/3/20 6:50 PM : "C Definition" finish browse.
+7/3/20 6:51 PM : Load file "browstd32SWAP_com.log".
+7/3/20 6:51 PM : "Compiler Generation" complete.
+7/3/20 7:06 PM : Load file "browstd32SWAP_com.log".
+7/3/20 7:06 PM : "Compiler Generation" complete.
+7/3/20 7:07 PM : Save file "browstd32SWAP.pdb".
+7/3/20 7:09 PM : "Micro Op. Description" start browse.
+7/3/20 7:10 PM : "Micro Op. Description" re-edit.
+7/3/20 7:10 PM : "Micro Op. Description" save
+7/3/20 7:10 PM : "Micro Op. Description" complete.
+7/3/20 7:10 PM : "Micro Op. Description" finish browse.
+7/3/20 7:10 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:10 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:10 PM : "HDL Generation" complete.
+7/3/20 7:10 PM : "Micro Op. Description" start browse.
+7/3/20 7:10 PM : "Micro Op. Description" re-edit.
+7/3/20 7:11 PM : "Micro Op. Description" save
+7/3/20 7:11 PM : "Micro Op. Description" complete.
+7/3/20 7:11 PM : "Micro Op. Description" finish browse.
+7/3/20 7:11 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:11 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:11 PM : "HDL Generation" complete.
+7/3/20 7:13 PM : "Micro Op. Description" start browse.
+7/3/20 7:13 PM : "Micro Op. Description" finish browse.
+7/3/20 7:13 PM : "Instruction Definition" start browse.
+7/3/20 7:15 PM : "Instruction Definition" finish browse.
+7/3/20 7:15 PM : "Micro Op. Description" start browse.
+7/3/20 7:15 PM : "Micro Op. Description" re-edit.
+7/3/20 7:16 PM : "Micro Op. Description" save
+7/3/20 7:16 PM : "Micro Op. Description" complete.
+7/3/20 7:16 PM : "Micro Op. Description" finish browse.
+7/3/20 7:17 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:17 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:17 PM : "HDL Generation" complete.
+7/3/20 7:17 PM : "Micro Op. Description" start browse.
+7/3/20 7:18 PM : "Micro Op. Description" finish browse.
+7/3/20 7:18 PM : "Instruction Definition" start browse.
+7/3/20 7:18 PM : "Instruction Definition" finish browse.
+7/3/20 7:19 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:19 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:19 PM : "HDL Generation" complete.
+7/3/20 7:19 PM : "Micro Op. Description" start browse.
+7/3/20 7:19 PM : "Micro Op. Description" re-edit.
+7/3/20 7:19 PM : "Micro Op. Description" save
+7/3/20 7:19 PM : "Micro Op. Description" complete.
+7/3/20 7:19 PM : "Micro Op. Description" finish browse.
+7/3/20 7:20 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:20 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:20 PM : "HDL Generation" complete.
+7/3/20 7:20 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:20 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:20 PM : "HDL Generation" complete.
+7/3/20 7:22 PM : "Micro Op. Description" start browse.
+7/3/20 7:23 PM : "Micro Op. Description" finish browse.
+7/3/20 7:23 PM : "Micro Op. Description" start browse.
+7/3/20 7:23 PM : "Micro Op. Description" finish browse.
+7/3/20 7:23 PM : "Instruction Definition" start browse.
+7/3/20 7:23 PM : "Instruction Definition" re-edit.
+7/3/20 7:25 PM : "Instruction Definition" save
+7/3/20 7:25 PM : "Instruction Definition" complete.
+7/3/20 7:25 PM : "Instruction Definition" finish browse.
+7/3/20 7:25 PM :  archest browstd32SWAP.arc browstd32SWAP_arc.log finished as normally.
+7/3/20 7:25 PM : Load file "browstd32SWAP_arc.log".
+7/3/20 7:25 PM : "Arch. Level Estimation" complete.
+7/3/20 7:25 PM :  asm_translator asmdev browstd32SWAP browstd32SWAP_asm.log finished as normally.
+7/3/20 7:25 PM : Load file "browstd32SWAP_asm.log".
+7/3/20 7:25 PM : "Assembler Generation" complete.
+7/3/20 7:25 PM : "Micro Op. Description" start edit.
+7/3/20 7:27 PM : "Micro Op. Description" save
+7/3/20 7:27 PM : "Micro Op. Description" complete.
+7/3/20 7:27 PM : "Micro Op. Description" finish browse.
+7/3/20 7:27 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:27 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:27 PM : "HDL Generation" complete.
+7/3/20 7:27 PM : "Micro Op. Description" start browse.
+7/3/20 7:27 PM : "Micro Op. Description" re-edit.
+7/3/20 7:28 PM : "Micro Op. Description" save
+7/3/20 7:28 PM : "Micro Op. Description" save
+7/3/20 7:28 PM : "Micro Op. Description" complete.
+7/3/20 7:28 PM : "Micro Op. Description" finish browse.
+7/3/20 7:28 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:28 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:28 PM : "HDL Generation" complete.
+7/3/20 7:30 PM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/3/20 7:30 PM : Load file "browstd32SWAP_mod.log".
+7/3/20 7:30 PM : "HDL Generation" complete.
+7/3/20 7:32 PM : "Micro Op. Description" start browse.
+7/3/20 7:33 PM : "Micro Op. Description" finish browse.
+7/4/20 2:32 AM : "Micro Op. Description" start browse.
+7/4/20 2:38 AM : "Micro Op. Description" re-edit.
+7/4/20 2:38 AM : "Micro Op. Description" save
+7/4/20 2:38 AM : "Micro Op. Description" complete.
+7/4/20 2:39 AM : "Micro Op. Description" save
+7/4/20 2:39 AM : "Micro Op. Description" finish browse.
+7/4/20 2:39 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/4/20 2:39 AM : Load file "browstd32SWAP_mod.log".
+7/4/20 2:39 AM : "HDL Generation" complete.
+7/4/20 2:41 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/4/20 2:41 AM : Load file "browstd32SWAP_mod.log".
+7/4/20 2:41 AM : "HDL Generation" complete.
+7/4/20 2:41 AM : Save file "browstd32SWAP.pdb".
+7/4/20 2:50 AM : "Micro Op. Description" start browse.
+7/4/20 2:50 AM : "Micro Op. Description" re-edit.
+7/4/20 2:58 AM : "Micro Op. Description" save
+7/4/20 2:58 AM : "Micro Op. Description" complete.
+7/4/20 2:59 AM : "Micro Op. Description" finish browse.
+7/4/20 2:59 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/4/20 2:59 AM : Load file "browstd32SWAP_mod.log".
+7/4/20 2:59 AM : "HDL Generation" complete.
+7/4/20 3:00 AM : "Micro Op. Description" start browse.
+7/4/20 3:00 AM : "Micro Op. Description" re-edit.
+7/4/20 3:00 AM : "Micro Op. Description" save
+7/4/20 3:00 AM : "Micro Op. Description" complete.
+7/4/20 3:01 AM : "Micro Op. Description" finish browse.
+7/4/20 3:02 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/4/20 3:02 AM : Load file "browstd32SWAP_mod.log".
+7/4/20 3:02 AM : "HDL Generation" complete.
+7/4/20 3:02 AM : Save file "browstd32SWAP.pdb".
+7/4/20 3:12 AM : "Micro Op. Description" start browse.
+7/4/20 3:12 AM : "Micro Op. Description" re-edit.
+7/4/20 3:22 AM : "Micro Op. Description" save
+7/4/20 3:22 AM : "Micro Op. Description" complete.
+7/4/20 3:22 AM : "Micro Op. Description" finish browse.
+7/4/20 3:22 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/4/20 3:22 AM : Load file "browstd32SWAP_mod.log".
+7/4/20 3:22 AM : "HDL Generation" complete.
+7/4/20 3:23 AM : "Micro Op. Description" start browse.
+7/4/20 3:23 AM : "Micro Op. Description" re-edit.
+7/4/20 3:23 AM : "Micro Op. Description" save
+7/4/20 3:23 AM : "Micro Op. Description" complete.
+7/4/20 3:23 AM : "Micro Op. Description" finish browse.
+7/4/20 3:23 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/4/20 3:23 AM : Load file "browstd32SWAP_mod.log".
+7/4/20 3:23 AM : "HDL Generation" complete.
+7/4/20 3:24 AM : "Micro Op. Description" start browse.
+7/4/20 3:25 AM : "Micro Op. Description" re-edit.
+7/4/20 3:25 AM : "Micro Op. Description" save
+7/4/20 3:25 AM : "Micro Op. Description" complete.
+7/4/20 3:25 AM : "Micro Op. Description" finish browse.
+7/4/20 3:26 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/4/20 3:26 AM : Load file "browstd32SWAP_mod.log".
+7/4/20 3:26 AM : "HDL Generation" complete.
+7/4/20 3:26 AM : "Micro Op. Description" start browse.
+7/4/20 3:26 AM : "Micro Op. Description" re-edit.
+7/4/20 3:26 AM : "Micro Op. Description" save
+7/4/20 3:26 AM : "Micro Op. Description" complete.
+7/4/20 3:26 AM : "Micro Op. Description" finish browse.
+7/4/20 3:27 AM :  modelgen both browstd32SWAP browstd32SWAP_mod.log VHDL finished as normally.
+7/4/20 3:27 AM : Load file "browstd32SWAP_mod.log".
+7/4/20 3:27 AM : "HDL Generation" complete.
+7/4/20 4:03 AM : "Micro Op. Description" start browse.
+7/4/20 4:04 AM : "Micro Op. Description" finish browse.
+7/4/20 4:09 AM : "Micro Op. Description" start browse.
+7/4/20 4:09 AM : "Micro Op. Description" finish browse.
+7/4/20 4:33 AM : "C Definition" start edit.
+7/4/20 4:34 AM : "C Definition" save
+7/4/20 4:34 AM : "C Definition" complete.
+7/4/20 4:34 AM : "C Definition" finish browse.
+7/4/20 4:35 AM : Load file "browstd32SWAP_com.log".
+7/4/20 4:35 AM : "Compiler Generation" complete.
+7/4/20 4:53 AM : Load file "browstd32SWAP_com.log".
+7/4/20 5:59 PM : "Compiler Generation" complete.
+7/4/20 6:02 PM : "Micro Op. Description" start browse.
+7/4/20 6:04 PM : "Micro Op. Description" finish browse.
+7/4/20 6:18 PM : "Instruction Definition" start browse.
+7/4/20 6:18 PM : "Instruction Definition" finish browse.
+7/4/20 6:18 PM : "Micro Op. Description" start browse.
+7/4/20 6:20 PM : "Micro Op. Description" finish browse.
+7/4/20 6:20 PM : Save file "browstd32SWAP.pdb".
+7/4/20 6:20 PM : "Main menu" quit.
+7/5/20 6:36 PM : "Main menu" start.
+7/5/20 6:36 PM : Load file "ASIPmeisterStd.ini".
+7/5/20 6:36 PM : Load file "browstd32SWAP.pdb".
+7/5/20 6:37 PM : "Micro Op. Description" complete.
+7/5/20 6:37 PM : "Micro Op. Description" start browse.
+7/5/20 6:38 PM : "Micro Op. Description" finish browse.
+7/5/20 6:38 PM : "Main menu" quit.
+7/6/20 5:27 PM : "Main menu" start.
+7/6/20 5:27 PM : Load file "ASIPmeisterStd.ini".
+7/6/20 5:27 PM : Load file "browstd32SWAP.pdb".
+7/6/20 5:27 PM : "Micro Op. Description" complete.
+7/6/20 5:27 PM : "Micro Op. Description" start browse.
+7/6/20 5:29 PM : "Micro Op. Description" finish browse.
+7/6/20 5:29 PM : "Instruction Definition" complete.
+7/6/20 5:29 PM : "Instruction Definition" start browse.
+7/6/20 5:30 PM : "Instruction Definition" finish browse.
+7/6/20 5:30 PM : "Main menu" quit.
+7/6/20 6:13 PM : "Main menu" start.
+7/6/20 6:13 PM : Load file "ASIPmeisterStd.ini".
+7/6/20 6:13 PM : Load file "browstd32SWAP.pdb".
+7/6/20 6:13 PM : "Instruction Definition" complete.
+7/6/20 6:13 PM : "Instruction Definition" start browse.
+7/6/20 6:14 PM : "Instruction Definition" finish browse.
+7/6/20 6:14 PM : "C Definition" complete.
+7/6/20 6:14 PM : "C Definition" start browse.
+7/6/20 6:15 PM : "C Definition" re-edit.
+7/6/20 6:15 PM : "C Definition" save
+7/6/20 6:15 PM : "C Definition" complete.
+7/6/20 6:15 PM : "C Definition" finish browse.
+7/6/20 6:16 PM : Load file "browstd32SWAP_com.log".
+7/6/20 6:16 PM : "Compiler Generation" complete.
+7/6/20 6:32 PM : Load file "browstd32SWAP_com.log".
+7/6/20 6:32 PM : "Compiler Generation" complete.
+7/6/20 6:32 PM : Save file "browstd32SWAP.pdb".
+7/6/20 6:32 PM : "Main menu" quit.
+7/17/20 8:04 PM : "Main menu" start.
+7/17/20 8:04 PM : Load file "ASIPmeisterStd.ini".
+7/17/20 8:04 PM : Load file "browstd32SWAP.pdb".
+7/17/20 8:04 PM : "Instruction Definition" complete.
+7/17/20 8:04 PM : "Instruction Definition" start browse.
+7/17/20 8:06 PM : "Instruction Definition" finish browse.
+7/17/20 8:06 PM : "Main menu" quit.
+7/17/20 8:13 PM : "Main menu" start.
+7/17/20 8:13 PM : Load file "ASIPmeisterStd.ini".
+7/17/20 8:13 PM : Load file "browstd32SWAP.pdb".
+7/17/20 8:13 PM : "Instruction Definition" complete.
+7/17/20 8:13 PM : "Instruction Definition" start browse.
+7/17/20 8:13 PM : "Instruction Definition" finish browse.
+7/17/20 8:13 PM : "Main menu" quit.
+6/14/21 4:49 PM : "Main menu" start.
+6/14/21 4:49 PM : Load file "ASIPmeisterStd.ini".
+6/14/21 4:49 PM : Load file "browstd32SWAP.pdb".
+6/14/21 4:50 PM : "Micro Op. Description" complete.
+6/14/21 4:50 PM : "Micro Op. Description" start browse.
+6/14/21 4:51 PM : "Micro Op. Description" finish browse.
+6/14/21 4:52 PM : "C Definition" complete.
+6/14/21 4:52 PM : "C Definition" start browse.
+6/14/21 4:53 PM : "C Definition" finish browse.
+6/14/21 4:53 PM : Query "parameter(pcu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(register,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(mifu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(mifu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(multiplier,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(divider,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(shifter,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(wire_in,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(wire_out,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(register,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(dummy_register,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(browregfile,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(extender,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(alu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(fwu,synthesis)" finished as normally.
+6/14/21 4:53 PM : Query "parameter(shifter,synthesis)" finished as normally.
+6/14/21 4:53 PM : "Resource Declaration" start browse.
+6/14/21 4:54 PM : "Resource Declaration" finish browse.
+6/14/21 4:54 PM : "Instruction Definition" complete.
+6/14/21 4:54 PM : "Instruction Definition" start browse.
+6/14/21 4:58 PM : "Instruction Definition" finish browse.
+6/14/21 5:01 PM : "Main menu" quit.

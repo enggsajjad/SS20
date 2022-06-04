@@ -1,0 +1,1 @@
+warning : base_integer(32) > width(16)

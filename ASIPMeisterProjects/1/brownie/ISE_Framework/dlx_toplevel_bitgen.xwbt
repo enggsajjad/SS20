@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sajjad/SS20/ASIPMeisterProjects/1/brownie/ISE_Framework/dlx_toplevel.ncd
+OUTFILE=/home/sajjad/SS20/ASIPMeisterProjects/1/brownie/ISE_Framework/dlx_toplevel.bit
+FAMILY=Virtex5
+PART=xc5vlx110t-1ff1136
+WORKINGDIR=/home/sajjad/SS20/ASIPMeisterProjects/1/brownie/ISE_Framework
+LICENSE=ISE
+USER_INFO=174111760_174111761_210611273_445

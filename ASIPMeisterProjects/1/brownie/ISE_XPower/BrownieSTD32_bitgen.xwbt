@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_XPower/BrownieSTD32.ncd
+OUTFILE=/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_XPower/BrownieSTD32.bit
+FAMILY=Virtex5
+PART=xc5vlx110t-1ff1136
+WORKINGDIR=/home/sajjad/WS18/ASIPMeisterProjects/1/brownie/ISE_XPower
+LICENSE=ISE
+USER_INFO=174111760_174111761_210611273_445

@@ -1,0 +1,50 @@
+	.section	.text
+	.addressing	Word
+	xor	r4, r4, r4
+	xor	r5, r5, r5
+	xor	r6, r6, r6
+	addi	r4, r0, $(0x0017EFFC / 0x10000)
+	addi	r5, r0, $(0x0017EFFC / 0x10000)
+
+	lsoi	r4, r4, $(0x0017EFFC % 0x10000)
+	lsoi	r5, r5, $(0x0017EFFC % 0x10000)
+
+	sw	-4(r5), r4
+	sw	-8(r5), r3
+	addi	r5, r4, $(-8)
+
+	jpl	_main	
+	sw	0(r5), r21
+	jpl	_exit
+
+
+
+	.section	.text
+	.addressing	.Word
+;	.align 2
+;	.globl	_main
+;	.type	_main, @function
+_main:
+;;  Function 'main'; 4 bytes of locals, 0 regs to save, 0 byte of out. args. size.
+
+	ADDI	R21, R0, #5
+	ADDI	R22, R0, #9
+
+	OR	R23, R21, R22
+	AND	R24, R21, R22
+	SUB	R25, R21, R22
+	MUL	R26, R21, R22
+	LLS	R27, R21, R22
+
+	jpr	r3		; return
+;	.size	_main, .-_main
+;	.ident	"GCC: (GNU) 4.2.2"
+
+
+
+
+
+_exit: 
+	trap	#0	; HALT
+
+

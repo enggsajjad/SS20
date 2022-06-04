@@ -1,0 +1,320 @@
+The program execution in dlxsim and modelsim is bit different and therefore has a bit differnt cycles.
+Dlxim using application.s and startup_dlx2.s to generate .dlxsim which is simulated.
+MOdelsim uses application.s and startup.s and handler.s to generated TEstData.IM/DM with the help or tbbrowstd.x
+In modelsim, after the reset, the handler is activated from 0xF000, it then directed the program counter to jump to 0x00 i.e. startup.s code.
+This code is used to handle stack pointer.
+jprl r16 instruction jumps to the main code at 0x3C. 
+The main code returns to 0x2c after executing all main code.
+From the modelsim analysis, it can be shown that load/store needs 5 extra stalls.
+There are some extra cycles at the begining(after reset) and at the end(before tb_finish)
+
+IM:
+
+   PC   Ints    Instruction
+   00: 00100420	addi	r16, r0,  %hi(_startup_consts)
+   04: 00008428	lsoi	r16, r16, %lo(_startup_consts)
+   08: 00008144	lw	r5,  0(r16)			; load stack pointer
+   0C: 00000000	nop
+   10: 00000420	addi	r16, r0,  %hi(_main)
+   14: 003C8428	lsoi	r16, r16, %lo(_main)
+   18: 00042961	subi	r5, r5, #4			; push link reg
+   1C: 00001947	sw	(r5), r3
+   20: 00000000	nop
+   24: 03000863	ori	r1, r1, #0x00000300	
+   28: 0000040F	jprl	r16
+   2C: 000028C4	lw	r3, (r5)
+   30: 00000000	nop
+   34: 00042960	addi	r5, r5, #4
+   38: 0000000D	trap	0
+   3C: FFFC1947	sw	-4(r5),r3	; push LinkRegister(r3)
+  40: FFF82147	sw	-8(r5),r4	; push FrameRegister(r4)
+  44: FFF82920	addi	r4, r5,#-8	; FramePtr = StackPtr-8
+  48: FFF42960	addi	r5,r5,#-12	; alloc local storage
+  4C: 000001A0	addi	r6,r0,#0
+  50: FFFC3107	sw	-4(r4),r6
+L_6_for_3:
+  54: 0000190B	jp	L_6_for_2
+  58: FFFC2244	lw	r9,-4(r4)
+  5C: 00000000	nop
+  60: FFFC2184	lw	r6,-4(r4)
+  64: 00000000	nop
+  68: 001001E0	addi	r7,r0,%hi(_B)
+  6C: 002C39E8	lsoi	r7,r7,%lo(_B)
+  70: 000231A5	llsi	r6,r6,#2
+  74: 31CC0001	add	r6,r6,r7
+  78: 000031C4	lw	r7,(r6)
+  7C: 00000000	nop
+  80: 001001A0	addi	r6,r0,%hi(_C)
+  84: 005431A8	lsoi	r6,r6,%lo(_C)
+  88: 00003184	lw	r6,(r6)
+  8C: 00000000	nop
+  90: 398C0001	add	r6,r7,r6
+  94: 00053220	addi	r8,r6,#5
+  98: 001001E0	addi	r7,r0,%hi(_A)
+  9C: 000439E8	lsoi	r7,r7,%lo(_A)
+  A0: 000249A5	llsi	r6,r9,#2
+  A4: 31CC0001	add	r6,r6,r7
+  A8: 00004187	sw	(r6),r8
+  AC: FFFC2184	lw	r6,-4(r4)
+  B0: 00000000	nop
+  B4: 000131A0	addi	r6,r6,#1
+  B8: FFFC3107	sw	-4(r4),r6
+L_6_for_2:
+  BC: FFFC2184	lw	r6,-4(r4
+  C0: 00000000	nop
+  C4: 000901E0	addi	r7,r0,#9
+  C8: 398CC001	elt	r6,r7,r6
+  CC: FF883009	brz	r6,L_6_for_3
+  D0: 000001A0	addi	r6,r0,#0
+  D4: 000420C4	lw	r3,4(r4)	; pop LinkRegister(r3)
+  D8: 00082160	addi	r5,r4,#8	; StackPointer = FramePointer+8
+  DC: 00002104	lw	r4,(r4)		; restore FramePointer
+  E0: 000000CE	jpr	r3		; return
+  E4: 00000000	
+  E8: 00000000	
+
+handler.s
+=============
+PC   Ints    Instruction
+F000: 84204081	xor	r16, r16, r16
+F004: 0000040E	jpr	r16
+F008: 00000000
+
+DM:
+======================
+
+    00: 0017EFFC
+    04: 00000033
+    08: 00000034
+    0C: 00000035
+    10: 00000036
+    14: 00000037
+    18: 00000038
+    1C: 00000039
+    20: 0000003A
+    24: 0000003B
+    28: 0000003C
+    2C: 00000001
+    30: 00000002
+    34: 00000003
+    38: 00000004
+    3C: 00000005
+   40: 00000006
+   44: 00000007
+   48: 00000008
+   4C: 00000009
+   50: 0000000A
+   54: 0000002D
+   58: 00000000
+
+
+
+startup.s
+=============
+;
+; startup routine for brownie testbench
+; written by Hirofumi IWATO 
+; All Rights Reserved 2008. ASIP Solutions, Inc.
+;
+
+#define SP r5
+
+	.section	.rodata
+_startup_consts:
+	.long	_sp_data
+	.section	.data
+	.section	.text
+	.align 2
+	.globl	_start
+	.type	_start, @function
+_start:
+	addi	r16, r0,  %hi(_startup_consts)
+	lsoi	r16, r16, %lo(_startup_consts)
+	lw	r5,  0(r16)			; load stack pointer
+        nop
+
+	addi	r16, r0,  %hi(_main)
+	lsoi	r16, r16, %lo(_main)
+
+	subi	r5, r5, #4			; push link reg
+	sw	(r5), r3
+        nop
+
+	ori	r1, r1, #0x00000300		; enable interrupt
+
+	jprl	r16
+
+	lw	r3, (r5)			; pop link reg
+        nop
+
+	addi	r5, r5, #4
+
+	trap	0
+
+
+
+
+
+
+6_for.s
+============
+; options passed:  -auxbase-strip
+; options enabled:  -falign-loops -fargument-alias -fbranch-count-reg
+; -fcommon -fearly-inlining -feliminate-unused-debug-types -ffunction-cse
+; -fgcse-lm -fident -finline-functions-called-once -fivopts
+; -fkeep-static-consts -fleading-underscore -fmath-errno
+; -fmove-loop-invariants -fpeephole -freg-struct-return -fsched-interblock
+; -fsched-spec -fsched-stalled-insns-dep -fshow-column
+; -fsplit-ivs-in-unroller -ftoplevel-reorder -ftrapping-math -ftree-loop-im
+; -ftree-loop-ivcanon -ftree-loop-optimize -ftree-vect-loop-version
+; -fzero-initialized-in-bss -mquickcall
+	.globl	_A
+.data
+	.align 2
+	.type	_A, @object
+	.size	_A, 40
+_A:
+	.long	1
+	.long	2
+	.long	3
+	.long	4
+	.long	5
+	.long	6
+	.long	7
+	.long	8
+	.long	9
+	.long	10
+	.globl	_B
+	.align 2
+	.type	_B, @object
+	.size	_B, 40
+_B:
+	.long	1
+	.long	2
+	.long	3
+	.long	4
+	.long	5
+	.long	6
+	.long	7
+	.long	8
+	.long	9
+	.long	10
+	.globl	_C
+	.align 2
+	.type	_C, @object
+	.size	_C, 4
+_C:
+	.long	5
+.text
+	.align 2
+	.globl	_main
+	.type	_main, @function
+_main:
+;  Function 'main'; 4 bytes of locals, 0 regs to save, 0 byte of out. args. size.
+	sw	-4(r5),r3	; push LinkRegister(r3)
+	sw	-8(r5),r4	; push FrameRegister(r4)
+	addi	r4, r5,#-8	; FramePtr = StackPtr-8
+	addi	r5,r5,#-12	; alloc local storage
+	addi	r6,r0,#0
+	sw	-4(r4),r6
+	jp	L_6_for_2
+L_6_for_3:
+	lw	r9,-4(r4)
+	nop
+	lw	r6,-4(r4)
+	nop
+	addi	r7,r0,%hi(_B)
+	lsoi	r7,r7,%lo(_B)
+	llsi	r6,r6,#2
+	add	r6,r6,r7
+	lw	r7,(r6)
+	nop
+	addi	r6,r0,%hi(_C)
+	lsoi	r6,r6,%lo(_C)
+	lw	r6,(r6)
+	nop
+	add	r6,r7,r6
+	addi	r8,r6,#5
+	addi	r7,r0,%hi(_A)
+	lsoi	r7,r7,%lo(_A)
+	llsi	r6,r9,#2
+	add	r6,r6,r7
+	sw	(r6),r8
+	lw	r6,-4(r4)
+	nop
+	addi	r6,r6,#1
+	sw	-4(r4),r6
+L_6_for_2:
+	lw	r6,-4(r4)
+	nop
+	addi	r7,r0,#9
+	elt	r6,r7,r6
+	brz	r6,L_6_for_3
+	addi	r6,r0,#0
+	lw	r3,4(r4)	; pop LinkRegister(r3)
+	addi	r5,r4,#8	; StackPointer = FramePointer+8
+	lw	r4,(r4)		; restore FramePointer
+	jpr	r3		; return
+	.size	_main, .-_main
+	.ident	"GCC: (GNU) 4.2.2"
+
+
+hanlder.s
+=============
+; simple interrupt handler
+; written by Hirofumi IWATO
+; All Rights Reserved 2008. ASIP Solutions, Inc.
+
+	.section	.rodata
+	.section	.data
+	.section	.htext
+	.align 2
+	.globl	__ih_reset
+	.type	__ih_reset, @function
+__ih_reset:
+	xor	r16, r16, r16
+	jpr	r16		; goto 0x000000000
+
+
+CYCLES BEFORE FIXING THE MISMATCH
+===================================
+DLXSIM
+============
+Altogether 419,0e0(419) cycles executed.
+Total integer operations = 330
+
+Total cycles = 419,0e0(419)
+Current cycleCount = 393  (Differs from the total cycles, if an cycleCount-overflow happened)
+
+Mult/Div/Mod Stalls = 0 cycles
+Load/Store Stalls = 89 cycles
+Jump/Branch Stalls = 0 cycles (for all jumps and taken branches)
+SpecialInstruction Stalls = 0 cycles
+
+MODELSIM
+==================
+# *****      0 ClockCycles simulated *****
+#           ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# *****    819 ClockCycles altogether simulated *****
+
+
+CYCLES AFTER FIXING THE MISMATCH
+===================================
+DLXSIM
+============
+Total integer operations = 330
+
+Total cycles = 775,0e0(775)
+Current cycleCount = 645  (Differs from the total cycles, if an cycleCount-overflow happened)
+
+Mult/Div/Mod Stalls = 0 cycles
+Load/Store Stalls = 445 cycles
+Jump/Branch Stalls = 0 cycles (for all jumps and taken branches)
+SpecialInstruction Stalls = 0 cycles
+
+
+MODELSIM
+==================
+ *****      0 ClockCycles simulated *****
+#           ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# *****    799 ClockCycles altogether simulated *****

@@ -1,0 +1,8 @@
+Release 13.2 Drc O.61xd (lin)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Dec  4 02:28:24 2018
+
+drc -z BrownieSTD32.ncd BrownieSTD32.pcf
+
+DRC detected 0 errors and 0 warnings.
