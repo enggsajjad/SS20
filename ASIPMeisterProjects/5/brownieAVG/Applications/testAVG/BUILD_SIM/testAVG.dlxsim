@@ -100,7 +100,7 @@ _exit:
 	trap	#0	; HALT
 
 
-; options passed:  -auxbase-strip -O0
+; options passed:  -iprefix -auxbase-strip -O0
 ;; options enabled:  -falign-loops -fargument-alias -fbranch-count-reg
 ;; -fcommon -fearly-inlining -feliminate-unused-debug-types -ffunction-cse
 ;; -fgcse-lm -fident -finline-functions-called-once -fivopts

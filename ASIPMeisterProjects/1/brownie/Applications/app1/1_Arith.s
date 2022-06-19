@@ -12,8 +12,7 @@ _main:
 	SUB	R25, R21, R22
 	MUL	R26, R21, R22
 	LLS	R27, R21, R22
-;	MINMAX	R29, R28, R21, R22
-;	SWAPIFL	R19, R18, R21, R22
+	AVG	R28, R21, R22
 
 	jpr	r3		; return
 	.size	_main, .-_main

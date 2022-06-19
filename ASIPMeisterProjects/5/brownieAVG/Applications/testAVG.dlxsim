@@ -1,0 +1,51 @@
+	.section	.text
+	.addressing	Word
+	xor	r4, r4, r4
+	xor	r5, r5, r5
+	xor	r6, r6, r6
+	addi	r4, r0, $(0x0017EFFC / 0x10000)
+	addi	r5, r0, $(0x0017EFFC / 0x10000)
+
+	lsoi	r4, r4, $(0x0017EFFC % 0x10000)
+	lsoi	r5, r5, $(0x0017EFFC % 0x10000)
+
+	sw	-4(r5), r4
+	sw	-8(r5), r3
+	addi	r5, r4, $(-8)
+
+	jpl	_main	
+	sw	0(r5), r21
+	jpl	_exit
+
+
+
+	.section	.text
+	.addressing	.Word
+;	.align 2
+;	.globl	_main
+;	.type	_main, @function
+_main:
+
+	ADDI	R21, R0, #150
+	ADDI	R22, R0, #9
+        ADDI    R23, R0, #928
+
+	ADD	R24, R21, R22
+	SUB	R25, R21, R22
+	AVG	R26, R21, R22
+	SWAP	R27, R21
+	XCHG	R28, R23
+	EXHW    R29, R21
+
+	jpr	r3		; return
+;	.size	_main, .-_main
+;	.ident	"GCC: (GNU) 4.2.2"
+
+
+
+
+
+_exit: 
+	trap	#0	; HALT
+
+

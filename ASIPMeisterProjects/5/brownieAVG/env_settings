@@ -7,7 +7,9 @@ export PROJECT_NAME=brownieAVG
 export CPU_NAME=browstd32AVG
 #export CPU_NAME=browstd32WithoutAdd
 # Location of dlxsim
-export DLXSIM_DIR=${HOME}/SS20/dlxsimbr
+export MYPATH=${HOME}/hussain/github/asiplab/asip_projects
+#export DLXSIM_DIR=${HOME}/SS20/dlxsimbr
+export DLXSIM_DIR=${MYPATH}/SS20/dlxsimbr
 
 # Name of the ISE directory inside your project directory
 export ISE_NAME=ISE_Framework
@@ -18,7 +20,8 @@ export ISE_NAME=ISE_Framework
 ###  Seldom changed values  ###
 ###############################
 
-export ASIPMEISTER_PROJECTS_DIR=${HOME}/SS20/ASIPMeisterProjects/5
+#export ASIPMEISTER_PROJECTS_DIR=${HOME}/SS20/ASIPMeisterProjects/5
+export ASIPMEISTER_PROJECTS_DIR=${MYPATH}/SS20/ASIPMeisterProjects/5
 
 export PROJECT_DIR=${ASIPMEISTER_PROJECTS_DIR}/${PROJECT_NAME}
 
@@ -28,7 +31,8 @@ export MODELSIM_DIR=${PROJECT_DIR}/ModelSim
 
 export ISE_DIR=${PROJECT_DIR}/${ISE_NAME}
 
-export MKIMG_DIR=${HOME}/SS20/mkimg
+#export MKIMG_DIR=${HOME}/SS20/mkimg
+export MKIMG_DIR=${MYPATH}/SS20/mkimg
 
 export COMPILER_NAME=brownie32-elf-gcc
 
